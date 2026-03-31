@@ -172,7 +172,37 @@ Rows marked † above have inflated metrics due to `.venv` inclusion. The follow
 
 ---
 
-## 7 · Known Confounds and Limitations
+## 7 · Final Repository Sizes (on disk, `.venv` excluded)
+
+Measured from each output directory after all phases completed.
+
+| Service | Run | Baseline | Genotype |
+|---|---|---:|---:|
+| tic_tac_toe | 1 | 124K | 372K |
+| tic_tac_toe | 2 | 152K | 536K |
+| tic_tac_toe | 3 | 120K | 408K |
+| **tic_tac_toe avg** | | **132K** | **439K** |
+| crontab_clone | 1 | 172K | 424K |
+| crontab_clone | 2 | 172K | 336K |
+| crontab_clone | 3 | 180K | 428K |
+| **crontab_clone avg** | | **175K** | **396K** |
+| ui_dashboard | 1 | 208K | 480K |
+| ui_dashboard | 2 | 188K | 404K |
+| ui_dashboard | 3 | 192K | 348K |
+| **ui_dashboard avg** | | **196K** | **411K** |
+
+### Size Multiplier (genotype / baseline)
+
+| Service | Baseline Avg | Genotype Avg | Multiplier |
+|---|---:|---:|---:|
+| tic_tac_toe | 132K | 439K | 3.3× |
+| crontab_clone | 175K | 396K | 2.3× |
+| ui_dashboard | 196K | 411K | 2.1× |
+| **Overall** | **168K** | **415K** | **2.5×** |
+
+---
+
+## 8 · Known Confounds and Limitations
 
 | # | Issue | Impact |
 |---|---|---|
