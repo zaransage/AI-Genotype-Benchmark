@@ -246,7 +246,68 @@ The `__pycache__` directories (generated when tests ran) accounted for most of t
 
 ---
 
-## 9 · Known Confounds and Limitations
+## 9 · Change Efficiency, Consistency, and Cross-Service Similarity
+
+### 9a · Did genotype make changes cheaper?
+
+The expand phase added a web UI and SQLite persistence to an existing API — a realistic change task. The ratio below shows how much more expensive the expand phase was relative to the build phase.
+
+| Service | Baseline expand/build (time) | Genotype expand/build (time) | Baseline expand/build (cost) | Genotype expand/build (cost) |
+|---|---:|---:|---:|---:|
+| tic_tac_toe | 2.9× | 1.4× | 2.4× | 1.4× |
+| crontab_clone | 1.4× | **0.74×** | 1.3× | **0.70×** |
+| ui_dashboard | 2.9× | **0.97×** | 2.4× | **0.96×** |
+| **Average** | **2.4×** | **1.0×** | **2.0×** | **1.1×** |
+
+Baseline expand phases cost 2–3× more than their build phases. Genotype expand phases cost roughly the same as their build phases — and for crontab_clone and ui_dashboard were actually *cheaper* than the initial build.
+
+This is the clearest evidence of a practical benefit: once the hexagonal structure exists, the model finds the right insertion points quickly (new inbound adaptor for the UI, new outbound port for SQLite) and does less re-reading and re-reasoning about the whole codebase.
+
+---
+
+### 9b · Were genotype runs consistent with each other?
+
+Top-level structure across all genotype runs, all services:
+
+```
+domain/   fixtures/   tests/   main.py   pyproject.toml   requirements.txt   uv.lock
+```
+
+This layout was produced identically in **all 9 genotype runs** across all three services. The internal `domain` tree followed the same pattern in every case:
+
+```
+domain/
+  <service_name>/
+    core/
+      adaptors/   (inbound — HTTP routes, web UI)
+      ports/      (outbound — in-memory store, SQLite)
+```
+
+The only variation was in the intermediate service name (`core` vs `game` vs `scheduler` vs `dashboard`) — a naming choice, not a structural deviation.
+
+Baseline top-level structure varied significantly across every run:
+
+| Run | tic_tac_toe | crontab_clone | ui_dashboard |
+|---|---|---|---|
+| 1 | flat files + `static/` + `conftest.py` | `tests/` + `templates/` + split modules | `tests/` + flat modules |
+| 2 | flat files, no subdirs | `tests/` + split modules | `tests/` + `templates/` |
+| 3 | flat files, no subdirs | `tests/` + `templates/` + 4 modules | flat test files + `templates/` |
+
+No two baseline runs of the same service produced the same layout.
+
+---
+
+### 9c · Were genotype services more similar to each other than baseline services?
+
+A developer opening any genotype service directory would see the same structure regardless of which service it is. The `domain/adaptors/ports` split, `fixtures/` contract files, and `tests/<service>/test_*.py` layout are identical across tic_tac_toe, crontab_clone, and ui_dashboard.
+
+Baseline services share only `main.py`, `requirements.txt`, and `README.md`. Module names, test placement, and folder layout were reinvented for each run.
+
+**Practical implication:** In a multi-service codebase, genotype's consistency would reduce onboarding cost and make cross-service tooling (linters, CI templates, code generation) feasible. Baseline produces bespoke outputs that don't compose.
+
+---
+
+## 10 · Known Confounds and Limitations
 
 | # | Issue | Impact |
 |---|---|---|
