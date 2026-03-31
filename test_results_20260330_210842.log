@@ -1,0 +1,2188 @@
+======================================================================
+Test + Coverage Run  started: 2026-03-30T21:08:42-04:00
+======================================================================
+
+──────────────────────────────────────────
+DIR  baseline/tic_tac_toe/run1
+error: Failed to create virtual environment
+  Caused by: A virtual environment already exists at `/home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_1/.venv`. Use `--clear` to replace it
+.............................                                            [100%]/home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_1/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f3098cb62f0>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_1/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f3098c162f0>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_1/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f3098c176a0>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_1/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f30982447c0>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_1/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f30982464d0>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_1/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f30982476a0>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_1/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f3098cb7010>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_1/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f309a2cac50>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_1/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f3098bb2b60>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_1/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f3098be3d30>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_1/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f30982757b0>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_1/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f3098bb2200>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_1/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f30982764d0>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_1/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f3098bb3f10>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_1/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f3098277790>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_1/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f3098277b50>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_1/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f3098247d30>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_1/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f30982b5120>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_1/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f30982b54e0>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_1/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f3098247e20>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_1/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f30982b73d0>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_1/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f30982b7790>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_1/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f3098247f10>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_1/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f30982e8a90>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_1/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f30982e9030>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_1/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f30982ea2f0>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_1/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f309a2cae30>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_1/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f30982eb4c0>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_1/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f30982eb880>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_1/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f30982756c0>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_1/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f3098320b80>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_1/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f3098320f40>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_1/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f30982747c0>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_1/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f3098322200>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_1/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f30983225c0>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_1/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f30982774c0>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_1/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f3098322a70>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.14.3-final-0 ________________
+
+Name                   Stmts   Miss  Cover   Missing
+----------------------------------------------------
+conftest.py                7      0   100%
+database.py               16      0   100%
+game.py                   40      0   100%
+main.py                   52      2    96%   16-17
+test_api.py               97      0   100%
+test_new_features.py      99      0   100%
+----------------------------------------------------
+TOTAL                    311      2    99%
+29 passed in 0.79s
+  RESULT   29 passed in 0.79s
+  COVERAGE 99%
+
+──────────────────────────────────────────
+DIR  genotype/tic_tac_toe/run1
+error: Failed to create virtual environment
+  Caused by: A virtual environment already exists at `/home/dmarble/git/ai_geenome_test/genotype_tic_tac_toe_1/.venv`. Use `--clear` to replace it
+........................................................................ [ 80%]
+.................                                                        [100%]
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.14.3-final-0 ________________
+
+Name                                        Stmts   Miss  Cover   Missing
+-------------------------------------------------------------------------
+domain/__init__.py                              0      0   100%
+domain/core/__init__.py                         0      0   100%
+domain/core/adaptors/__init__.py                0      0   100%
+domain/core/adaptors/game_service.py           33      7    79%   57-66, 71-73
+domain/core/adaptors/i_game_service.py         12      0   100%
+domain/core/adaptors/routes.py                 65     21    68%   65, 93-94, 105-109, 114-121, 126-130
+domain/core/adaptors/ui_routes.py               9      0   100%
+domain/core/game_logic.py                      36      2    94%   84-85
+domain/core/models.py                          63      2    97%   106, 109
+domain/core/ports/__init__.py                   0      0   100%
+domain/core/ports/i_game_archive.py            10      0   100%
+domain/core/ports/i_game_repository.py         10      0   100%
+domain/core/ports/in_memory_repository.py      14      0   100%
+domain/core/ports/sqlite_game_archive.py       47      0   100%
+main.py                                        18     18     0%   8-37
+tests/__init__.py                               0      0   100%
+tests/game/__init__.py                          0      0   100%
+tests/game/test_adaptors.py                    95      1    99%   156
+tests/game/test_core.py                       210      2    99%   158, 333
+tests/game/test_ports.py                       40      1    98%   75
+tests/game/test_sqlite_port.py                133      0   100%
+tests/game/test_ui_routes.py                   84      1    99%   82
+-------------------------------------------------------------------------
+TOTAL                                         879     55    94%
+89 passed in 0.94s
+  RESULT   89 passed in 0.94s
+  COVERAGE 94%
+
+──────────────────────────────────────────
+DIR  baseline/tic_tac_toe/run2
+error: Failed to create virtual environment
+  Caused by: A virtual environment already exists at `/home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_2/.venv`. Use `--clear` to replace it
+......................................./home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fd1915222f0>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fd191523790>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fd191522e30>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fd191520e50>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fd1915231f0>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fd191290d60>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fd191522200>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+                                  [100%]
+=============================== warnings summary ===============================
+test_new_features.py::test_ui_returns_html
+  <string>:2: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fd1913567a0>
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+test_new_features.py::test_completed_games_empty_initially
+  /home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_2/.venv/lib/python3.14/site-packages/fastapi/routing.py:382: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fd191414130>
+    async def app(request: Request) -> Response:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+test_new_features.py::test_completed_games_empty_initially
+  /home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_2/.venv/lib/python3.14/site-packages/fastapi/routing.py:382: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fd191417010>
+    async def app(request: Request) -> Response:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+test_new_features.py::test_completed_games_empty_initially
+  /home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_2/.venv/lib/python3.14/site-packages/fastapi/routing.py:382: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fd191355c60>
+    async def app(request: Request) -> Response:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+test_new_features.py::test_completed_games_empty_initially
+  /home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_2/.venv/lib/python3.14/site-packages/fastapi/routing.py:382: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fd191356d40>
+    async def app(request: Request) -> Response:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+test_new_features.py::test_completed_games_empty_initially
+  /home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_2/.venv/lib/python3.14/site-packages/fastapi/routing.py:382: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fd1913545e0>
+    async def app(request: Request) -> Response:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+test_new_features.py::test_completed_games_empty_initially
+  /home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_2/.venv/lib/python3.14/site-packages/fastapi/routing.py:382: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fd191357e20>
+    async def app(request: Request) -> Response:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+test_new_features.py::test_completed_games_empty_initially
+  /home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_2/.venv/lib/python3.14/site-packages/fastapi/routing.py:382: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fd191357f10>
+    async def app(request: Request) -> Response:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+test_new_features.py::test_completed_games_empty_initially
+  /home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_2/.venv/lib/python3.14/site-packages/fastapi/routing.py:382: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fd1913553f0>
+    async def app(request: Request) -> Response:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+test_new_features.py::test_completed_games_empty_initially
+  /home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_2/.venv/lib/python3.14/site-packages/fastapi/routing.py:382: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fd191357100>
+    async def app(request: Request) -> Response:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+test_new_features.py::test_completed_games_empty_initially
+  /home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_2/.venv/lib/python3.14/site-packages/fastapi/routing.py:382: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fd1913572e0>
+    async def app(request: Request) -> Response:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+test_new_features.py::test_completed_games_empty_initially
+  /home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_2/.venv/lib/python3.14/site-packages/fastapi/routing.py:382: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fd191356e30>
+    async def app(request: Request) -> Response:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+test_new_features.py::test_completed_games_empty_initially
+  /home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_2/.venv/lib/python3.14/site-packages/fastapi/routing.py:382: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fd191356890>
+    async def app(request: Request) -> Response:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+test_new_features.py::test_completed_games_empty_initially
+  /home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_2/.venv/lib/python3.14/site-packages/fastapi/routing.py:382: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fd1913549a0>
+    async def app(request: Request) -> Response:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+test_new_features.py::test_completed_games_empty_initially
+  /home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_2/.venv/lib/python3.14/site-packages/fastapi/routing.py:382: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fd1913575b0>
+    async def app(request: Request) -> Response:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+test_new_features.py::test_completed_games_empty_initially
+  /home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_2/.venv/lib/python3.14/site-packages/fastapi/routing.py:382: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fd1913563e0>
+    async def app(request: Request) -> Response:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+test_new_features.py::test_completed_games_empty_initially
+  /home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_2/.venv/lib/python3.14/site-packages/fastapi/routing.py:382: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fd191354a90>
+    async def app(request: Request) -> Response:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+test_new_features.py::test_completed_games_empty_initially
+  /home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_2/.venv/lib/python3.14/site-packages/fastapi/routing.py:382: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fd191357c40>
+    async def app(request: Request) -> Response:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+test_new_features.py::test_completed_games_empty_initially
+  /home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_2/.venv/lib/python3.14/site-packages/fastapi/routing.py:382: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fd191357010>
+    async def app(request: Request) -> Response:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+test_new_features.py::test_completed_games_empty_initially
+  /home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_2/.venv/lib/python3.14/site-packages/fastapi/routing.py:382: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fd191356f20>
+    async def app(request: Request) -> Response:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+test_new_features.py::test_completed_games_empty_initially
+  /home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_2/.venv/lib/python3.14/site-packages/fastapi/routing.py:382: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fd191357a60>
+    async def app(request: Request) -> Response:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+test_new_features.py::test_completed_games_empty_initially
+  /home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_2/.venv/lib/python3.14/site-packages/fastapi/routing.py:382: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fd191521030>
+    async def app(request: Request) -> Response:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+test_new_features.py::test_multiple_completed_games_listed
+  /home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_2/.venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:880: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fd191354c70>
+    parent_id = id(self.cancel_scope._host_task)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+test_new_features.py::test_multiple_completed_games_listed
+  /home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_2/.venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:880: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fd191521120>
+    parent_id = id(self.cancel_scope._host_task)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+test_new_features.py::test_multiple_completed_games_listed
+  /home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_2/.venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:880: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fd1915224d0>
+    parent_id = id(self.cancel_scope._host_task)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+test_new_features.py::test_multiple_completed_games_listed
+  /home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_2/.venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:880: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fd1915213f0>
+    parent_id = id(self.cancel_scope._host_task)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+test_new_features.py::test_multiple_completed_games_listed
+  /home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_2/.venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:880: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fd1915216c0>
+    parent_id = id(self.cancel_scope._host_task)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+test_new_features.py::test_multiple_completed_games_listed
+  /home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_2/.venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:880: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fd191521210>
+    parent_id = id(self.cancel_scope._host_task)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+test_new_features.py::test_multiple_completed_games_listed
+  /home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_2/.venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:880: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fd191523010>
+    parent_id = id(self.cancel_scope._host_task)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+test_new_features.py::test_multiple_completed_games_listed
+  /home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_2/.venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:880: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fd191522890>
+    parent_id = id(self.cancel_scope._host_task)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+test_new_features.py::test_multiple_completed_games_listed
+  /home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_2/.venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:880: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fd191523b50>
+    parent_id = id(self.cancel_scope._host_task)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+test_new_features.py::test_multiple_completed_games_listed
+  /home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_2/.venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:880: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fd191521a80>
+    parent_id = id(self.cancel_scope._host_task)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+test_new_features.py::test_multiple_completed_games_listed
+  /home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_2/.venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:880: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fd191290b80>
+    parent_id = id(self.cancel_scope._host_task)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+test_new_features.py::test_multiple_completed_games_listed
+  /home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_2/.venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:880: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fd191523e20>
+    parent_id = id(self.cancel_scope._host_task)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+test_new_features.py::test_multiple_completed_games_listed
+  /home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_2/.venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:880: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fd191290220>
+    parent_id = id(self.cancel_scope._host_task)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+test_new_features.py::test_multiple_completed_games_listed
+  /home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_2/.venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:880: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fd191291b70>
+    parent_id = id(self.cancel_scope._host_task)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+test_new_features.py::test_multiple_completed_games_listed
+  /home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_2/.venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:880: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fd191290c70>
+    parent_id = id(self.cancel_scope._host_task)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.14.3-final-0 ________________
+
+Name                   Stmts   Miss  Cover   Missing
+----------------------------------------------------
+db.py                     29      0   100%
+game.py                   38      0   100%
+main.py                   51      0   100%
+test_game.py             121      0   100%
+test_new_features.py     161      0   100%
+----------------------------------------------------
+TOTAL                    400      0   100%
+39 passed, 37 warnings in 1.45s
+  RESULT   39 passed, 37 warnings in 1.45s
+  COVERAGE 100%
+
+──────────────────────────────────────────
+DIR  genotype/tic_tac_toe/run2
+error: Failed to create virtual environment
+  Caused by: A virtual environment already exists at `/home/dmarble/git/ai_geenome_test/genotype_tic_tac_toe_2/.venv`. Use `--clear` to replace it
+........................................................................ [ 91%]
+......./home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fa53ec4bf10>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fa53ec4ba60>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fa53ec4be20>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fa53ec4ac50>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fa53ec7a4d0>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fa53ec7b880>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fa53ecb8130>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fa53ecb8c70>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fa53ecb8b80>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fa53ecb88b0>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fa53ecb87c0>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+                                                                  [100%]
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.14.3-final-0 ________________
+
+Name                                          Stmts   Miss  Cover   Missing
+---------------------------------------------------------------------------
+domain/__init__.py                                0      0   100%
+domain/game/__init__.py                           0      0   100%
+domain/game/adaptors/__init__.py                  0      0   100%
+domain/game/adaptors/i_game_controller.py         9      0   100%
+domain/game/adaptors/i_web_ui_controller.py       7      0   100%
+domain/game/adaptors/rest_controller.py          37      1    97%   54
+domain/game/adaptors/web_ui_controller.py        24      1    96%   168
+domain/game/completed_game.py                    22      4    82%   34, 36, 38, 42
+domain/game/game.py                              33      1    97%   55
+domain/game/game_service.py                      62      2    97%   55, 118
+domain/game/ports/__init__.py                     0      0   100%
+domain/game/ports/i_game_archive.py              10      0   100%
+domain/game/ports/i_game_repository.py            8      0   100%
+domain/game/ports/in_memory_repository.py        10      0   100%
+domain/game/ports/sqlite_game_archive.py         24      0   100%
+main.py                                          16      0   100%
+tests/__init__.py                                 0      0   100%
+tests/game/__init__.py                            0      0   100%
+tests/game/test_adaptors.py                      96      1    99%   155
+tests/game/test_adaptors_web_ui.py               95      1    99%   143
+tests/game/test_core.py                         169      1    99%   222
+tests/game/test_ports.py                         40      1    98%   63
+tests/game/test_ports_archive.py                105      1    99%   167
+---------------------------------------------------------------------------
+TOTAL                                           767     14    98%
+79 passed in 0.63s
+<sys>:0: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fa53ffc6890>
+  RESULT   79 passed in 0.63s
+  COVERAGE 98%
+
+──────────────────────────────────────────
+DIR  baseline/tic_tac_toe/run3
+error: Failed to create virtual environment
+  Caused by: A virtual environment already exists at `/home/dmarble/git/ai_geenome_test/baseline_tic_tac_toe_3/.venv`. Use `--clear` to replace it
+........................................                                 [100%]
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.14.3-final-0 ________________
+
+Name                   Stmts   Miss  Cover   Missing
+----------------------------------------------------
+main.py                   97      0   100%
+test_api.py              111      0   100%
+test_new_features.py     115      0   100%
+----------------------------------------------------
+TOTAL                    323      0   100%
+40 passed in 1.31s
+  RESULT   40 passed in 1.31s
+  COVERAGE 100%
+
+──────────────────────────────────────────
+DIR  genotype/tic_tac_toe/run3
+error: Failed to create virtual environment
+  Caused by: A virtual environment already exists at `/home/dmarble/git/ai_geenome_test/genotype_tic_tac_toe_3/.venv`. Use `--clear` to replace it
+...............................................................          [100%]
+=============================== warnings summary ===============================
+tests/game/test_web_ui.py::TestWebUIAdaptorRouter::test_get_root_contains_board_element
+  /home/dmarble/git/ai_geenome_test/genotype_tic_tac_toe_3/.venv/lib/python3.14/site-packages/pydantic/v1/errors.py:425: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f8bfe1385e0>
+    class NumberNotMultipleError(PydanticValueError):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/game/test_web_ui.py::TestWebUIAdaptorRouter::test_get_root_contains_board_element
+  /home/dmarble/git/ai_geenome_test/genotype_tic_tac_toe_3/.venv/lib/python3.14/site-packages/pydantic/v1/errors.py:425: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f8bfe138b80>
+    class NumberNotMultipleError(PydanticValueError):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/game/test_web_ui.py::TestWebUIAdaptorRouter::test_get_root_contains_board_element
+  /home/dmarble/git/ai_geenome_test/genotype_tic_tac_toe_3/.venv/lib/python3.14/site-packages/pydantic/v1/errors.py:425: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f8bfe138c70>
+    class NumberNotMultipleError(PydanticValueError):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/game/test_web_ui.py::TestWebUIAdaptorRouter::test_get_root_contains_board_element
+  /home/dmarble/git/ai_geenome_test/genotype_tic_tac_toe_3/.venv/lib/python3.14/site-packages/pydantic/v1/errors.py:425: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f8bfe138e50>
+    class NumberNotMultipleError(PydanticValueError):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/game/test_web_ui.py::TestWebUIAdaptorRouter::test_get_root_contains_board_element
+  /home/dmarble/git/ai_geenome_test/genotype_tic_tac_toe_3/.venv/lib/python3.14/site-packages/pydantic/v1/errors.py:425: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f8bfe138f40>
+    class NumberNotMultipleError(PydanticValueError):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/game/test_web_ui.py::TestWebUIAdaptorRouter::test_get_root_contains_board_element
+  /home/dmarble/git/ai_geenome_test/genotype_tic_tac_toe_3/.venv/lib/python3.14/site-packages/pydantic/v1/errors.py:425: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f8bfe139030>
+    class NumberNotMultipleError(PydanticValueError):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/game/test_web_ui.py::TestWebUIAdaptorRouter::test_get_root_contains_board_element
+  /home/dmarble/git/ai_geenome_test/genotype_tic_tac_toe_3/.venv/lib/python3.14/site-packages/pydantic/v1/errors.py:425: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f8bfe139120>
+    class NumberNotMultipleError(PydanticValueError):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/game/test_web_ui.py::TestWebUIAdaptorRouter::test_get_root_contains_board_element
+  /home/dmarble/git/ai_geenome_test/genotype_tic_tac_toe_3/.venv/lib/python3.14/site-packages/pydantic/v1/errors.py:425: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f8bfe139210>
+    class NumberNotMultipleError(PydanticValueError):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/game/test_web_ui.py::TestWebUIAdaptorRouter::test_get_root_contains_board_element
+  /home/dmarble/git/ai_geenome_test/genotype_tic_tac_toe_3/.venv/lib/python3.14/site-packages/pydantic/v1/errors.py:425: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f8bfe139300>
+    class NumberNotMultipleError(PydanticValueError):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/game/test_web_ui.py::TestWebUIAdaptorRouter::test_get_root_contains_board_element
+  /home/dmarble/git/ai_geenome_test/genotype_tic_tac_toe_3/.venv/lib/python3.14/site-packages/pydantic/v1/errors.py:425: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f8bfe1393f0>
+    class NumberNotMultipleError(PydanticValueError):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.14.3-final-0 ________________
+
+Name                                             Stmts   Miss  Cover   Missing
+------------------------------------------------------------------------------
+domain/__init__.py                                   0      0   100%
+domain/game/__init__.py                              0      0   100%
+domain/game/core/__init__.py                         0      0   100%
+domain/game/core/adaptors/__init__.py                0      0   100%
+domain/game/core/adaptors/api_schemas.py            31      2    94%   28, 35
+domain/game/core/adaptors/i_game_controller.py       3      0   100%
+domain/game/core/adaptors/rest_controller.py        31      3    90%   43-45
+domain/game/core/adaptors/web_ui_adaptor.py         13      0   100%
+domain/game/core/game_service.py                    31      0   100%
+domain/game/core/models.py                          31      0   100%
+domain/game/core/ports/__init__.py                   0      0   100%
+domain/game/core/ports/i_game_archive.py             9      0   100%
+domain/game/core/ports/i_game_repository.py          4      0   100%
+domain/game/core/ports/in_memory_repository.py      10      0   100%
+domain/game/core/ports/sqlite_game_archive.py       20      0   100%
+main.py                                             43     43     0%   9-75
+tests/__init__.py                                    0      0   100%
+tests/game/__init__.py                               0      0   100%
+tests/game/test_adaptors.py                         98      1    99%   152
+tests/game/test_core.py                            150      1    99%   258
+tests/game/test_ports.py                            43      1    98%   76
+tests/game/test_sqlite_archive.py                   98      0   100%
+tests/game/test_web_ui.py                           72      1    99%   118
+------------------------------------------------------------------------------
+TOTAL                                              687     52    92%
+63 passed, 10 warnings in 0.55s
+  RESULT   63 passed, 10 warnings in 0.55s
+  COVERAGE 92%
+
+──────────────────────────────────────────
+DIR  baseline/crontab_clone/run1
+error: Failed to create virtual environment
+  Caused by: A virtual environment already exists at `/home/dmarble/git/ai_geenome_test/baseline_crontab_clone_1/.venv`. Use `--clear` to replace it
+...........................                                              [100%]
+=============================== warnings summary ===============================
+tests/test_api.py: 11 warnings
+tests/test_ui.py: 1 warning
+  /home/dmarble/git/ai_geenome_test/baseline_crontab_clone_1/.venv/lib/python3.14/site-packages/sqlalchemy/sql/schema.py:3624: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    return util.wrap_callable(lambda ctx: fn(), fn)  # type: ignore
+
+tests/test_api.py::TestDeleteJob::test_history_deleted_with_job
+tests/test_api.py::TestTriggerJob::test_success
+tests/test_api.py::TestTriggerJob::test_failed_command_exit_code_captured
+tests/test_api.py::TestTriggerJob::test_stderr_captured
+tests/test_api.py::TestJobHistory::test_history_grows_with_runs
+tests/test_api.py::TestJobHistory::test_history_grows_with_runs
+tests/test_api.py::TestJobHistory::test_history_ordered_most_recent_first
+tests/test_api.py::TestJobHistory::test_history_ordered_most_recent_first
+  /home/dmarble/git/ai_geenome_test/baseline_crontab_clone_1/jobs.py:17: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    started_at=datetime.utcnow(),
+
+tests/test_api.py::TestDeleteJob::test_history_deleted_with_job
+tests/test_api.py::TestTriggerJob::test_success
+tests/test_api.py::TestTriggerJob::test_failed_command_exit_code_captured
+tests/test_api.py::TestTriggerJob::test_stderr_captured
+tests/test_api.py::TestJobHistory::test_history_grows_with_runs
+tests/test_api.py::TestJobHistory::test_history_grows_with_runs
+tests/test_api.py::TestJobHistory::test_history_ordered_most_recent_first
+tests/test_api.py::TestJobHistory::test_history_ordered_most_recent_first
+  /home/dmarble/git/ai_geenome_test/baseline_crontab_clone_1/jobs.py:43: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    run.finished_at = datetime.utcnow()
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.14.3-final-0 ________________
+
+Name                Stmts   Miss  Cover   Missing
+-------------------------------------------------
+database.py            11      4    64%   15-19
+jobs.py                21      3    86%   36-38
+main.py                66      1    98%   36
+models.py              32      0   100%
+scheduler.py           20     10    50%   10-19, 38-39
+tests/__init__.py       0      0   100%
+tests/test_api.py     124      0   100%
+tests/test_ui.py       54      0   100%
+-------------------------------------------------
+TOTAL                 328     18    95%
+27 passed, 28 warnings in 2.06s
+  RESULT   27 passed, 28 warnings in 2.06s
+  COVERAGE 95%
+
+──────────────────────────────────────────
+DIR  genotype/crontab_clone/run1
+error: Failed to create virtual environment
+  Caused by: A virtual environment already exists at `/home/dmarble/git/ai_geenome_test/genotype_crontab_clone_1/.venv`. Use `--clear` to replace it
+........................................................................ [ 97%]
+..                                                                       [100%]/home/dmarble/git/ai_geenome_test/genotype_crontab_clone_1/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7facc402f970>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/genotype_crontab_clone_1/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7facc402fa60>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/genotype_crontab_clone_1/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7facc402fb50>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/genotype_crontab_clone_1/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7facc402fd30>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/genotype_crontab_clone_1/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7facc402fe20>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/genotype_crontab_clone_1/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7facc402ff10>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/genotype_crontab_clone_1/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7facc401c040>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/genotype_crontab_clone_1/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7facc401c130>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/genotype_crontab_clone_1/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7facc401c220>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/genotype_crontab_clone_1/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7facc401c310>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/genotype_crontab_clone_1/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7facc401c6d0>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/genotype_crontab_clone_1/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7facc401c7c0>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/genotype_crontab_clone_1/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7facc401c400>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/genotype_crontab_clone_1/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7facc401c5e0>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/genotype_crontab_clone_1/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7facc401c8b0>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.14.3-final-0 ________________
+
+Name                                                      Stmts   Miss  Cover   Missing
+---------------------------------------------------------------------------------------
+domain/__init__.py                                            0      0   100%
+domain/scheduler/__init__.py                                  0      0   100%
+domain/scheduler/core/__init__.py                             0      0   100%
+domain/scheduler/core/adaptors/__init__.py                    0      0   100%
+domain/scheduler/core/adaptors/http_adaptor.py               63      4    94%   54-55, 76-77
+domain/scheduler/core/adaptors/i_http_adaptor.py             13      0   100%
+domain/scheduler/core/adaptors/i_web_ui_adaptor.py            6      0   100%
+domain/scheduler/core/adaptors/web_ui_adaptor.py             10      0   100%
+domain/scheduler/core/job.py                                 33      0   100%
+domain/scheduler/core/ports/__init__.py                       0      0   100%
+domain/scheduler/core/ports/i_job_executor.py                 6      0   100%
+domain/scheduler/core/ports/i_job_repository.py              16      0   100%
+domain/scheduler/core/ports/in_memory_job_repository.py      20      0   100%
+domain/scheduler/core/ports/sqlite_job_repository.py         50      0   100%
+domain/scheduler/core/ports/subprocess_job_executor.py       12      0   100%
+domain/scheduler/core/scheduler_service.py                   31     17    45%   26-27, 40-49, 53-55, 59-64, 72, 76, 80
+main.py                                                      18     18     0%   8-43
+tests/__init__.py                                             0      0   100%
+tests/scheduler/__init__.py                                   0      0   100%
+tests/scheduler/test_adaptors.py                            218      1    99%   365
+tests/scheduler/test_core.py                                100      1    99%   160
+tests/scheduler/test_ports.py                               117      1    99%   191
+tests/scheduler/test_sqlite_port.py                         135      1    99%   208
+tests/scheduler/test_web_ui_adaptor.py                       55      1    98%   97
+---------------------------------------------------------------------------------------
+TOTAL                                                       903     44    95%
+74 passed in 0.93s
+  RESULT   74 passed in 0.93s
+  COVERAGE 95%
+
+──────────────────────────────────────────
+DIR  baseline/crontab_clone/run2
+error: Failed to create virtual environment
+  Caused by: A virtual environment already exists at `/home/dmarble/git/ai_geenome_test/baseline_crontab_clone_2/.venv`. Use `--clear` to replace it
+....................................                                     [100%]
+=============================== warnings summary ===============================
+tests/test_api.py: 22 warnings
+tests/test_ui.py: 5 warnings
+  /home/dmarble/git/ai_geenome_test/baseline_crontab_clone_2/.venv/lib/python3.14/site-packages/sqlalchemy/sql/schema.py:3624: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    return util.wrap_callable(lambda ctx: fn(), fn)  # type: ignore
+
+tests/test_api.py: 13 warnings
+tests/test_ui.py: 5 warnings
+  /home/dmarble/git/ai_geenome_test/baseline_crontab_clone_2/scheduler.py:44: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    started_at=datetime.utcnow(),
+
+tests/test_api.py: 13 warnings
+tests/test_ui.py: 5 warnings
+  /home/dmarble/git/ai_geenome_test/baseline_crontab_clone_2/scheduler.py:71: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    run.finished_at = datetime.utcnow()
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.14.3-final-0 ________________
+
+Name                Stmts   Miss  Cover   Missing
+-------------------------------------------------
+database.py            13      4    69%   17-21
+main.py                60      6    90%   19-23, 26, 219
+models.py              39      0   100%
+scheduler.py           56     20    64%   16-17, 35, 40, 64-69, 75, 79-88, 99-101, 105-106
+tests/__init__.py       0      0   100%
+tests/conftest.py      26      0   100%
+tests/test_api.py     119      0   100%
+tests/test_ui.py       58      0   100%
+-------------------------------------------------
+TOTAL                 371     30    92%
+36 passed, 63 warnings in 2.16s
+  RESULT   36 passed, 63 warnings in 2.16s
+  COVERAGE 92%
+
+──────────────────────────────────────────
+DIR  genotype/crontab_clone/run2
+error: Failed to create virtual environment
+  Caused by: A virtual environment already exists at `/home/dmarble/git/ai_geenome_test/genotype_crontab_clone_2/.venv`. Use `--clear` to replace it
+............................................................./home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f4a305fff10>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f4a305fea70>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f4a305ffd30>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f4a305ffc40>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f4a305ffb50>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f4a305ff2e0>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f4a305fd300>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f4a305fe890>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f4a305ff010>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f4a305fe980>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f4a305fcf40>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f4a305ff4c0>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f4a305ff5b0>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f4a305ff790>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f4a305ff6a0>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f4a305ff880>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f4a305ffa60>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f4a305ff970>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f4a305fef20>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f4a305fdd50>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f4a305fd210>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f4a305ff1f0>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f4a305fed40>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f4a305fde40>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f4a305fec50>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f4a305fe5c0>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f4a305fc400>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f4a305fc5e0>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f4a305fd7b0>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f4a305fd990>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f4a305fc130>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f4a305fc040>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f4a3055df30>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f4a3055e7a0>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f4a3055f4c0>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f4a3055e5c0>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f4a3055c7c0>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f4a3055f100>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+            [100%]
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.14.3-final-0 ________________
+
+Name                                                 Stmts   Miss  Cover   Missing
+----------------------------------------------------------------------------------
+domain/__init__.py                                       0      0   100%
+domain/scheduler/__init__.py                             0      0   100%
+domain/scheduler/adaptors/__init__.py                    0      0   100%
+domain/scheduler/adaptors/i_scheduler_adaptor.py         3      3     0%   2-6
+domain/scheduler/adaptors/i_web_ui_adaptor.py            3      0   100%
+domain/scheduler/adaptors/rest_adaptor.py               48      0   100%
+domain/scheduler/adaptors/web_ui_adaptor.py             38      2    95%   115-116
+domain/scheduler/core/__init__.py                        0      0   100%
+domain/scheduler/core/commands.py                       58      3    95%   83-85
+domain/scheduler/core/job.py                            15      0   100%
+domain/scheduler/core/run_record.py                      9      0   100%
+domain/scheduler/ports/__init__.py                       0      0   100%
+domain/scheduler/ports/i_job_repository.py               5      0   100%
+domain/scheduler/ports/in_memory_job_repository.py      22      0   100%
+domain/scheduler/ports/sqlite_job_repository.py         50      0   100%
+main.py                                                 11     11     0%   9-47
+tests/__init__.py                                        0      0   100%
+tests/scheduler/__init__.py                              0      0   100%
+tests/scheduler/test_adaptors.py                       177      1    99%   278
+tests/scheduler/test_core.py                           147      1    99%   269
+tests/scheduler/test_ports.py                          154      1    99%   223
+----------------------------------------------------------------------------------
+TOTAL                                                  740     22    97%
+61 passed in 1.06s
+  RESULT   61 passed in 1.06s
+  COVERAGE 97%
+
+──────────────────────────────────────────
+DIR  baseline/crontab_clone/run3
+error: Failed to create virtual environment
+  Caused by: A virtual environment already exists at `/home/dmarble/git/ai_geenome_test/baseline_crontab_clone_3/.venv`. Use `--clear` to replace it
+...........................................                              [100%]/home/dmarble/git/ai_geenome_test/baseline_crontab_clone_3/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fe2f446be20>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_crontab_clone_3/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fe2f446bf10>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_crontab_clone_3/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fe2f44689a0>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_crontab_clone_3/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fe2f4469990>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_crontab_clone_3/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fe2f446a890>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_crontab_clone_3/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fe2f446a7a0>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_crontab_clone_3/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fe2f446b100>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_crontab_clone_3/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fe2f446b3d0>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_crontab_clone_3/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fe2f44685e0>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_crontab_clone_3/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fe2f446b970>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_crontab_clone_3/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fe2f446b5b0>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_crontab_clone_3/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fe2f446b790>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_crontab_clone_3/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fe2f446b6a0>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_crontab_clone_3/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fe2f446b4c0>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_crontab_clone_3/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fe2f446b2e0>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_crontab_clone_3/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fe2f446b880>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_crontab_clone_3/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fe2f446ba60>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_crontab_clone_3/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fe2f446bb50>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_crontab_clone_3/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fe2f44ec040>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_crontab_clone_3/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fe2f44ec130>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_crontab_clone_3/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fe2f44ec220>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+
+=============================== warnings summary ===============================
+tests/test_api.py: 20 warnings
+tests/test_db.py: 14 warnings
+  /home/dmarble/git/ai_geenome_test/baseline_crontab_clone_3/.venv/lib/python3.14/site-packages/pydantic/main.py:250: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+
+tests/test_api.py::test_history_records_run
+tests/test_api.py::test_history_multiple_runs
+tests/test_api.py::test_history_multiple_runs
+tests/test_api.py::test_trigger_returns_202
+tests/test_api.py::test_trigger_response_fields
+tests/test_api.py::test_trigger_echo_exits_zero
+tests/test_api.py::test_trigger_captures_stdout
+tests/test_api.py::test_trigger_failing_command
+tests/test_api.py::test_trigger_run_appears_in_history
+  /home/dmarble/git/ai_geenome_test/baseline_crontab_clone_3/runner.py:16: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    started_at=datetime.utcnow(),
+
+tests/test_api.py::test_history_records_run
+tests/test_api.py::test_history_multiple_runs
+tests/test_api.py::test_history_multiple_runs
+tests/test_api.py::test_trigger_returns_202
+tests/test_api.py::test_trigger_response_fields
+tests/test_api.py::test_trigger_echo_exits_zero
+tests/test_api.py::test_trigger_captures_stdout
+tests/test_api.py::test_trigger_failing_command
+tests/test_api.py::test_trigger_run_appears_in_history
+  /home/dmarble/git/ai_geenome_test/baseline_crontab_clone_3/runner.py:37: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    run.finished_at = datetime.utcnow()
+
+tests/test_db.py::test_run_record_survives_restart
+tests/test_db.py::test_multiple_runs_persist
+tests/test_db.py::test_multiple_runs_persist
+tests/test_db.py::test_multiple_runs_persist
+tests/test_db.py::test_delete_removes_associated_runs
+tests/test_db.py::test_clear_wipes_memory_and_db
+tests/test_db.py::test_run_with_none_exit_code_persists
+tests/test_db.py::test_manually_triggered_flag_persists
+  /home/dmarble/git/ai_geenome_test/baseline_crontab_clone_3/tests/test_db.py:22: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    started_at=datetime.utcnow(),
+
+tests/test_db.py::test_run_record_survives_restart
+tests/test_db.py::test_multiple_runs_persist
+tests/test_db.py::test_multiple_runs_persist
+tests/test_db.py::test_multiple_runs_persist
+tests/test_db.py::test_delete_removes_associated_runs
+tests/test_db.py::test_clear_wipes_memory_and_db
+tests/test_db.py::test_run_with_none_exit_code_persists
+tests/test_db.py::test_manually_triggered_flag_persists
+  /home/dmarble/git/ai_geenome_test/baseline_crontab_clone_3/tests/test_db.py:23: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    finished_at=datetime.utcnow(),
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.14.3-final-0 ________________
+
+Name                Stmts   Miss  Cover   Missing
+-------------------------------------------------
+main.py                54      2    96%   80-82
+models.py              25      0   100%
+runner.py              22      6    73%   30-35
+scheduler.py           22      2    91%   44-45
+storage.py             72      1    99%   74
+tests/__init__.py       0      0   100%
+tests/conftest.py       5      0   100%
+tests/test_api.py     134      0   100%
+tests/test_db.py      117      0   100%
+tests/test_ui.py       38      0   100%
+-------------------------------------------------
+TOTAL                 489     11    98%
+43 passed, 68 warnings in 1.18s
+  RESULT   43 passed, 68 warnings in 1.18s
+  COVERAGE 98%
+
+──────────────────────────────────────────
+DIR  genotype/crontab_clone/run3
+error: Failed to create virtual environment
+  Caused by: A virtual environment already exists at `/home/dmarble/git/ai_geenome_test/genotype_crontab_clone_3/.venv`. Use `--clear` to replace it
+........................................................................ [ 91%]
+......./home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f49f931f0>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f49f925c0>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f49f932e0>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f49f90e50>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f49f91120>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f49f92e30>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f49f92d40>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f49f91c60>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f49f913f0>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f49f915d0>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f49f90310>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f49f906d0>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f49f914e0>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f49f918a0>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f49f90b80>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f49f92f20>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f49f90130>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f49f91f30>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f49f90c70>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f49f90d60>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f49f91a80>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f49f91990>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f49f91030>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f49f909a0>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f49f904f0>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f49f90400>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f49f90220>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f49f905e0>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f49f91b70>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f4a887790>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f4a886d40>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f4a887e20>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f4a8865c0>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f4a887f10>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f4a8855d0>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f4a887d30>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f4a887a60>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f4a887c40>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f4a8848b0>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+                                                                  [100%]/home/dmarble/git/ai_geenome_test/genotype_crontab_clone_3/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f4964d3f0>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+
+=============================== warnings summary ===============================
+tests/scheduler/test_sqlite_ports.py::TestSqliteJobRepository::test_delete_returns_true_for_existing_job
+  /home/dmarble/git/ai_geenome_test/genotype_crontab_clone_3/domain/scheduler/core/ports/sqlite_job_repository.py:99: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f49f927a0>
+    cursor = conn.execute("DELETE FROM jobs WHERE id = ?", (job_id,))
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/scheduler/test_sqlite_ports.py::TestSqliteJobRepository::test_delete_returns_true_for_existing_job
+  /home/dmarble/git/ai_geenome_test/genotype_crontab_clone_3/domain/scheduler/core/ports/sqlite_job_repository.py:99: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f49f92c50>
+    cursor = conn.execute("DELETE FROM jobs WHERE id = ?", (job_id,))
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/scheduler/test_sqlite_ports.py::TestSqliteJobRepository::test_delete_returns_true_for_existing_job
+  /home/dmarble/git/ai_geenome_test/genotype_crontab_clone_3/domain/scheduler/core/ports/sqlite_job_repository.py:99: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f49f933d0>
+    cursor = conn.execute("DELETE FROM jobs WHERE id = ?", (job_id,))
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/scheduler/test_sqlite_ports.py::TestSqliteJobRepository::test_delete_returns_true_for_existing_job
+  /home/dmarble/git/ai_geenome_test/genotype_crontab_clone_3/domain/scheduler/core/ports/sqlite_job_repository.py:99: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f49f936a0>
+    cursor = conn.execute("DELETE FROM jobs WHERE id = ?", (job_id,))
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/scheduler/test_sqlite_ports.py::TestSqliteJobRepository::test_delete_returns_true_for_existing_job
+  /home/dmarble/git/ai_geenome_test/genotype_crontab_clone_3/domain/scheduler/core/ports/sqlite_job_repository.py:99: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f49f92a70>
+    cursor = conn.execute("DELETE FROM jobs WHERE id = ?", (job_id,))
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/scheduler/test_sqlite_ports.py::TestSqliteJobRepository::test_delete_returns_true_for_existing_job
+  /home/dmarble/git/ai_geenome_test/genotype_crontab_clone_3/domain/scheduler/core/ports/sqlite_job_repository.py:99: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f49f93c40>
+    cursor = conn.execute("DELETE FROM jobs WHERE id = ?", (job_id,))
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/scheduler/test_sqlite_ports.py::TestSqliteJobRepository::test_delete_returns_true_for_existing_job
+  /home/dmarble/git/ai_geenome_test/genotype_crontab_clone_3/domain/scheduler/core/ports/sqlite_job_repository.py:99: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f4964c7c0>
+    cursor = conn.execute("DELETE FROM jobs WHERE id = ?", (job_id,))
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/scheduler/test_sqlite_ports.py::TestSqliteJobRepository::test_delete_returns_true_for_existing_job
+  /home/dmarble/git/ai_geenome_test/genotype_crontab_clone_3/domain/scheduler/core/ports/sqlite_job_repository.py:99: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f4964c8b0>
+    cursor = conn.execute("DELETE FROM jobs WHERE id = ?", (job_id,))
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/scheduler/test_sqlite_ports.py::TestSqliteJobRepository::test_delete_returns_true_for_existing_job
+  /home/dmarble/git/ai_geenome_test/genotype_crontab_clone_3/domain/scheduler/core/ports/sqlite_job_repository.py:99: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f4964c9a0>
+    cursor = conn.execute("DELETE FROM jobs WHERE id = ?", (job_id,))
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/scheduler/test_sqlite_ports.py::TestSqliteJobRepository::test_delete_returns_true_for_existing_job
+  /home/dmarble/git/ai_geenome_test/genotype_crontab_clone_3/domain/scheduler/core/ports/sqlite_job_repository.py:99: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f4964ca90>
+    cursor = conn.execute("DELETE FROM jobs WHERE id = ?", (job_id,))
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/scheduler/test_sqlite_ports.py::TestSqliteJobRepository::test_delete_returns_true_for_existing_job
+  /home/dmarble/git/ai_geenome_test/genotype_crontab_clone_3/domain/scheduler/core/ports/sqlite_job_repository.py:99: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f4964cb80>
+    cursor = conn.execute("DELETE FROM jobs WHERE id = ?", (job_id,))
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/scheduler/test_sqlite_ports.py::TestSqliteJobRepository::test_delete_returns_true_for_existing_job
+  /home/dmarble/git/ai_geenome_test/genotype_crontab_clone_3/domain/scheduler/core/ports/sqlite_job_repository.py:99: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f4964cc70>
+    cursor = conn.execute("DELETE FROM jobs WHERE id = ?", (job_id,))
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/scheduler/test_sqlite_ports.py::TestSqliteJobRepository::test_delete_returns_true_for_existing_job
+  /home/dmarble/git/ai_geenome_test/genotype_crontab_clone_3/domain/scheduler/core/ports/sqlite_job_repository.py:99: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f4964cd60>
+    cursor = conn.execute("DELETE FROM jobs WHERE id = ?", (job_id,))
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/scheduler/test_sqlite_ports.py::TestSqliteJobRepository::test_delete_returns_true_for_existing_job
+  /home/dmarble/git/ai_geenome_test/genotype_crontab_clone_3/domain/scheduler/core/ports/sqlite_job_repository.py:99: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f4964ce50>
+    cursor = conn.execute("DELETE FROM jobs WHERE id = ?", (job_id,))
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/scheduler/test_sqlite_ports.py::TestSqliteJobRepository::test_delete_returns_true_for_existing_job
+  /home/dmarble/git/ai_geenome_test/genotype_crontab_clone_3/domain/scheduler/core/ports/sqlite_job_repository.py:99: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f4964cf40>
+    cursor = conn.execute("DELETE FROM jobs WHERE id = ?", (job_id,))
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/scheduler/test_sqlite_ports.py::TestSqliteJobRepository::test_delete_returns_true_for_existing_job
+  /home/dmarble/git/ai_geenome_test/genotype_crontab_clone_3/domain/scheduler/core/ports/sqlite_job_repository.py:99: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f4964d030>
+    cursor = conn.execute("DELETE FROM jobs WHERE id = ?", (job_id,))
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/scheduler/test_sqlite_ports.py::TestSqliteJobRepository::test_delete_returns_true_for_existing_job
+  /home/dmarble/git/ai_geenome_test/genotype_crontab_clone_3/domain/scheduler/core/ports/sqlite_job_repository.py:99: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f4964d120>
+    cursor = conn.execute("DELETE FROM jobs WHERE id = ?", (job_id,))
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/scheduler/test_sqlite_ports.py::TestSqliteJobRepository::test_delete_returns_true_for_existing_job
+  /home/dmarble/git/ai_geenome_test/genotype_crontab_clone_3/domain/scheduler/core/ports/sqlite_job_repository.py:99: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f4964d210>
+    cursor = conn.execute("DELETE FROM jobs WHERE id = ?", (job_id,))
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/scheduler/test_sqlite_ports.py::TestSqliteJobRepository::test_delete_returns_true_for_existing_job
+  /home/dmarble/git/ai_geenome_test/genotype_crontab_clone_3/domain/scheduler/core/ports/sqlite_job_repository.py:99: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f2f4964d300>
+    cursor = conn.execute("DELETE FROM jobs WHERE id = ?", (job_id,))
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.14.3-final-0 ________________
+
+Name                                                      Stmts   Miss  Cover   Missing
+---------------------------------------------------------------------------------------
+domain/__init__.py                                            0      0   100%
+domain/scheduler/__init__.py                                  0      0   100%
+domain/scheduler/core/__init__.py                             0      0   100%
+domain/scheduler/core/adaptors/__init__.py                    0      0   100%
+domain/scheduler/core/adaptors/i_scheduler_adaptor.py         4      4     0%   8-14
+domain/scheduler/core/adaptors/scheduler_routes.py           33      0   100%
+domain/scheduler/core/adaptors/ui_routes.py                  10      0   100%
+domain/scheduler/core/job.py                                 16      0   100%
+domain/scheduler/core/job_run.py                             13      1    92%   24
+domain/scheduler/core/ports/__init__.py                       0      0   100%
+domain/scheduler/core/ports/i_job_repository.py               5      0   100%
+domain/scheduler/core/ports/in_memory_job_repository.py      23      0   100%
+domain/scheduler/core/ports/sqlite_job_repository.py         41      0   100%
+domain/scheduler/core/scheduler_service.py                   28      0   100%
+main.py                                                      16     16     0%   12-41
+tests/__init__.py                                             0      0   100%
+tests/scheduler/__init__.py                                   0      0   100%
+tests/scheduler/test_adaptors.py                            141      1    99%   232
+tests/scheduler/test_core.py                                194      1    99%   344
+tests/scheduler/test_ports.py                                78      1    99%   132
+tests/scheduler/test_sqlite_ports.py                        108      1    99%   185
+tests/scheduler/test_ui_adaptors.py                          49      1    98%   80
+---------------------------------------------------------------------------------------
+TOTAL                                                       759     26    97%
+79 passed, 19 warnings in 1.07s
+  RESULT   79 passed, 19 warnings in 1.07s
+  COVERAGE 97%
+
+──────────────────────────────────────────
+DIR  baseline/ui_dashboard/run1
+error: Failed to create virtual environment
+  Caused by: A virtual environment already exists at `/home/dmarble/git/ai_geenome_test/baseline_ui_dashboard_1/.venv`. Use `--clear` to replace it
+....................................................                     [100%]
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.14.3-final-0 ________________
+
+Name                   Stmts   Miss  Cover   Missing
+----------------------------------------------------
+db.py                     60      0   100%
+main.py                   76      4    95%   74, 78, 253-255
+models.py                 15      0   100%
+storage.py                16      0   100%
+tests/__init__.py          0      0   100%
+tests/test_api.py        157      0   100%
+tests/test_sqlite.py     119      0   100%
+tests/test_ui.py          64      0   100%
+----------------------------------------------------
+TOTAL                    507      4    99%
+52 passed in 1.54s
+  RESULT   52 passed in 1.54s
+  COVERAGE 99%
+
+──────────────────────────────────────────
+DIR  genotype/ui_dashboard/run1
+error: Failed to create virtual environment
+  Caused by: A virtual environment already exists at `/home/dmarble/git/ai_geenome_test/genotype_ui_dashboard_1/.venv`. Use `--clear` to replace it
+........................................................................ [ 91%]
+.......                                                                  [100%]
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.14.3-final-0 ________________
+
+Name                                                     Stmts   Miss  Cover   Missing
+--------------------------------------------------------------------------------------
+domain/__init__.py                                           0      0   100%
+domain/core/__init__.py                                      0      0   100%
+domain/core/adaptors/__init__.py                             0      0   100%
+domain/core/adaptors/fastapi_router.py                      63      0   100%
+domain/core/adaptors/i_metrics_dashboard_adaptor.py          3      0   100%
+domain/core/adaptors/i_web_ui_adaptor.py                     3      0   100%
+domain/core/adaptors/web_ui_router.py                       42      1    98%   61
+domain/core/commands.py                                     52      0   100%
+domain/core/models.py                                       49      4    92%   45, 47, 63, 67
+domain/core/ports/__init__.py                                0      0   100%
+domain/core/ports/i_dashboard_repository.py                  4      0   100%
+domain/core/ports/i_metric_value_repository.py               4      0   100%
+domain/core/ports/i_widget_repository.py                     4      0   100%
+domain/core/ports/in_memory_dashboard_repository.py         12      0   100%
+domain/core/ports/in_memory_metric_value_repository.py      10      0   100%
+domain/core/ports/in_memory_widget_repository.py            12      0   100%
+domain/core/ports/sqlite_dashboard_repository.py            21      0   100%
+domain/core/ports/sqlite_metric_value_repository.py         16      0   100%
+domain/core/ports/sqlite_widget_repository.py               20      0   100%
+main.py                                                     28     28     0%   7-72
+tests/__init__.py                                            0      0   100%
+tests/dashboard/__init__.py                                  0      0   100%
+tests/dashboard/test_adaptors.py                           134      1    99%   230
+tests/dashboard/test_core.py                               187      1    99%   259
+tests/dashboard/test_ports.py                               94      1    99%   144
+tests/dashboard/test_sqlite_ports.py                       110      1    99%   159
+tests/dashboard/test_web_ui_adaptors.py                     92      1    99%   189
+--------------------------------------------------------------------------------------
+TOTAL                                                      960     38    96%
+79 passed in 0.74s
+  RESULT   79 passed in 0.74s
+  COVERAGE 96%
+
+──────────────────────────────────────────
+DIR  baseline/ui_dashboard/run2
+error: Failed to create virtual environment
+  Caused by: A virtual environment already exists at `/home/dmarble/git/ai_geenome_test/baseline_ui_dashboard_2/.venv`. Use `--clear` to replace it
+................................./home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec58818a0>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec5881210>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec71015d0>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec7101a80>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec5810400>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec58107c0>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec5813010>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec5811a80>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec58ab3d0>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec58a8040>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec58aa980>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec58ab6a0>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec58a9b70>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec58a8c70>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec58a8b80>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec58a89a0>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec58aa7a0>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec58ab5b0>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec58a8130>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec58ab2e0>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec58aaa70>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec58aab60>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec58aac50>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec58ab880>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec58a8220>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec58ab1f0>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec58ab4c0>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec58ab010>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec58ab100>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec58aba60>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec58abb50>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec58abc40>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec58abd30>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec58abe20>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec58abf10>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec5748040>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec5748130>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec5748220>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+                                        [100%]
+=============================== warnings summary ===============================
+tests/test_api.py::TestGetDashboard::test_get_existing
+  /home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/threading.py:301: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec59a1e40>
+    if hasattr(lock, '_release_save'):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_api.py::TestGetDashboard::test_get_existing
+  /home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/threading.py:301: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec59a22f0>
+    if hasattr(lock, '_release_save'):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_api.py::TestGetDashboard::test_get_existing
+  /home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/threading.py:301: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec59a26b0>
+    if hasattr(lock, '_release_save'):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_api.py::TestGetDashboard::test_get_existing
+  /home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/threading.py:301: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec59a3e20>
+    if hasattr(lock, '_release_save'):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_api.py::TestGetDashboard::test_get_existing
+  /home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/threading.py:301: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec59a1c60>
+    if hasattr(lock, '_release_save'):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_api.py::TestGetDashboard::test_get_existing
+  /home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/threading.py:301: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec5810220>
+    if hasattr(lock, '_release_save'):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_api.py::TestPostMetric::test_history_accumulates
+  /home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/threading.py:144: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec5811f30>
+    return _CRLock(*args, **kwargs)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_api.py::TestPostMetric::test_history_accumulates
+  /home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/threading.py:144: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec58114e0>
+    return _CRLock(*args, **kwargs)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_api.py::TestPostMetric::test_history_accumulates
+  /home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/threading.py:144: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec58134c0>
+    return _CRLock(*args, **kwargs)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_api.py::TestPostMetric::test_history_accumulates
+  /home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/threading.py:144: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec5813970>
+    return _CRLock(*args, **kwargs)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_api.py::TestPostMetric::test_history_accumulates
+  /home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/threading.py:144: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec5880130>
+    return _CRLock(*args, **kwargs)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_api.py::TestPostMetric::test_history_accumulates
+  /home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/threading.py:144: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec58804f0>
+    return _CRLock(*args, **kwargs)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_api.py::TestPostMetric::test_history_accumulates
+  /home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/threading.py:144: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec58808b0>
+    return _CRLock(*args, **kwargs)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_api.py::TestPostMetric::test_history_accumulates
+  /home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/threading.py:144: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec5880f40>
+    return _CRLock(*args, **kwargs)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_api.py::TestPostMetric::test_history_accumulates
+  /home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/threading.py:144: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec5881300>
+    return _CRLock(*args, **kwargs)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_api.py::TestPostMetric::test_history_accumulates
+  /home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/threading.py:144: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec58816c0>
+    return _CRLock(*args, **kwargs)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_api.py::TestPostMetric::test_history_accumulates
+  /home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/threading.py:144: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec5882b60>
+    return _CRLock(*args, **kwargs)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_api.py::TestPostMetric::test_history_accumulates
+  /home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/threading.py:144: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec5882f20>
+    return _CRLock(*args, **kwargs)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_api.py::TestPostMetric::test_history_accumulates
+  /home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/threading.py:144: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec58835b0>
+    return _CRLock(*args, **kwargs)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_api.py::TestPostMetric::test_history_accumulates
+  /home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/threading.py:144: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec5883a60>
+    return _CRLock(*args, **kwargs)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_api.py::TestPostMetric::test_history_accumulates
+  /home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/threading.py:144: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec5883d30>
+    return _CRLock(*args, **kwargs)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_api.py::TestPostMetric::test_history_accumulates
+  /home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/threading.py:144: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec58a9030>
+    return _CRLock(*args, **kwargs)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_api.py::TestPostMetric::test_history_accumulates
+  /home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/threading.py:144: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec58a93f0>
+    return _CRLock(*args, **kwargs)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_api.py::TestPostMetric::test_history_accumulates
+  /home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/threading.py:144: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec58a97b0>
+    return _CRLock(*args, **kwargs)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_api.py::TestPostMetric::test_history_accumulates
+  /home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/threading.py:144: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec58a8d60>
+    return _CRLock(*args, **kwargs)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_api.py::TestPostMetric::test_history_accumulates
+  /home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/threading.py:144: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec58a9f30>
+    return _CRLock(*args, **kwargs)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_api.py::TestPostMetric::test_history_accumulates
+  /home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/threading.py:144: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec58aa2f0>
+    return _CRLock(*args, **kwargs)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_api.py::TestPostMetric::test_history_accumulates
+  /home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/threading.py:144: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec58aa6b0>
+    return _CRLock(*args, **kwargs)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_api.py::TestPostMetric::test_history_accumulates
+  /home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/threading.py:144: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec58aad40>
+    return _CRLock(*args, **kwargs)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_ui.py::TestUIEndpoint::test_index_not_included_in_openapi_schema
+  /home/dmarble/git/ai_geenome_test/baseline_ui_dashboard_2/.venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2345: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec5813f10>
+    def _get_wrapped_inner_schema(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_ui.py::TestUIEndpoint::test_index_not_included_in_openapi_schema
+  /home/dmarble/git/ai_geenome_test/baseline_ui_dashboard_2/.venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2345: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec5883e20>
+    def _get_wrapped_inner_schema(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_ui.py::TestUIEndpoint::test_index_not_included_in_openapi_schema
+  /home/dmarble/git/ai_geenome_test/baseline_ui_dashboard_2/.venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2345: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec5811120>
+    def _get_wrapped_inner_schema(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_ui.py::TestUIEndpoint::test_index_not_included_in_openapi_schema
+  /home/dmarble/git/ai_geenome_test/baseline_ui_dashboard_2/.venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2345: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec5811b70>
+    def _get_wrapped_inner_schema(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_ui.py::TestUIEndpoint::test_index_not_included_in_openapi_schema
+  /home/dmarble/git/ai_geenome_test/baseline_ui_dashboard_2/.venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2345: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec5810310>
+    def _get_wrapped_inner_schema(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_ui.py::TestUIEndpoint::test_index_not_included_in_openapi_schema
+  /home/dmarble/git/ai_geenome_test/baseline_ui_dashboard_2/.venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2345: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec58106d0>
+    def _get_wrapped_inner_schema(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_ui.py::TestUIEndpoint::test_index_not_included_in_openapi_schema
+  /home/dmarble/git/ai_geenome_test/baseline_ui_dashboard_2/.venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2345: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec59a3d30>
+    def _get_wrapped_inner_schema(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_ui.py::TestUIEndpoint::test_index_not_included_in_openapi_schema
+  /home/dmarble/git/ai_geenome_test/baseline_ui_dashboard_2/.venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2345: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec59a25c0>
+    def _get_wrapped_inner_schema(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_ui.py::TestUIEndpoint::test_index_not_included_in_openapi_schema
+  /home/dmarble/git/ai_geenome_test/baseline_ui_dashboard_2/.venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2345: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec58a8400>
+    def _get_wrapped_inner_schema(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_ui.py::TestUIEndpoint::test_index_not_included_in_openapi_schema
+  /home/dmarble/git/ai_geenome_test/baseline_ui_dashboard_2/.venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2345: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f1ec58a88b0>
+    def _get_wrapped_inner_schema(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.14.3-final-0 ________________
+
+Name                Stmts   Miss  Cover   Missing
+-------------------------------------------------
+db_store.py            62      0   100%
+main.py                56      0   100%
+models.py              18      0   100%
+storage.py             23     23     0%   1-38
+tests/__init__.py       0      0   100%
+tests/test_api.py     154      0   100%
+tests/test_ui.py      145      0   100%
+-------------------------------------------------
+TOTAL                 458     23    95%
+33 passed, 39 warnings in 1.31s
+  RESULT   33 passed, 39 warnings in 1.31s
+  COVERAGE 95%
+
+──────────────────────────────────────────
+DIR  genotype/ui_dashboard/run2
+error: Failed to create virtual environment
+  Caused by: A virtual environment already exists at `/home/dmarble/git/ai_geenome_test/genotype_ui_dashboard_2/.venv`. Use `--clear` to replace it
+........................................................................ [ 64%]
+.......................................                                  [100%]
+=============================== warnings summary ===============================
+tests/dashboard/test_web_ui_adaptor.py::TestWebUIDashboardListPage::test_get_ui_content_type_is_html
+  /home/dmarble/git/ai_geenome_test/genotype_ui_dashboard_2/.venv/lib/python3.14/site-packages/pydantic/fields.py:683: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f5aa5a94d60>
+    continue
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/dashboard/test_web_ui_adaptor.py::TestWebUIDashboardListPage::test_get_ui_content_type_is_html
+  /home/dmarble/git/ai_geenome_test/genotype_ui_dashboard_2/.venv/lib/python3.14/site-packages/pydantic/fields.py:683: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f5aa5a967a0>
+    continue
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/dashboard/test_web_ui_adaptor.py::TestWebUIDashboardListPage::test_get_ui_content_type_is_html
+  /home/dmarble/git/ai_geenome_test/genotype_ui_dashboard_2/.venv/lib/python3.14/site-packages/pydantic/fields.py:683: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f5aa5a96890>
+    continue
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/dashboard/test_web_ui_adaptor.py::TestWebUIDashboardListPage::test_get_ui_content_type_is_html
+  /home/dmarble/git/ai_geenome_test/genotype_ui_dashboard_2/.venv/lib/python3.14/site-packages/pydantic/fields.py:683: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f5aa5a96980>
+    continue
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/dashboard/test_web_ui_adaptor.py::TestWebUIDashboardListPage::test_get_ui_content_type_is_html
+  /home/dmarble/git/ai_geenome_test/genotype_ui_dashboard_2/.venv/lib/python3.14/site-packages/pydantic/fields.py:683: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f5aa5a96a70>
+    continue
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/dashboard/test_web_ui_adaptor.py::TestWebUIDashboardListPage::test_get_ui_content_type_is_html
+  /home/dmarble/git/ai_geenome_test/genotype_ui_dashboard_2/.venv/lib/python3.14/site-packages/pydantic/fields.py:683: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f5aa5a96b60>
+    continue
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/dashboard/test_web_ui_adaptor.py::TestWebUIDashboardListPage::test_get_ui_content_type_is_html
+  /home/dmarble/git/ai_geenome_test/genotype_ui_dashboard_2/.venv/lib/python3.14/site-packages/pydantic/fields.py:683: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f5aa5a96c50>
+    continue
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/dashboard/test_web_ui_adaptor.py::TestWebUIDashboardListPage::test_get_ui_content_type_is_html
+  /home/dmarble/git/ai_geenome_test/genotype_ui_dashboard_2/.venv/lib/python3.14/site-packages/pydantic/fields.py:683: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f5aa5a96d40>
+    continue
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/dashboard/test_web_ui_adaptor.py::TestWebUIDashboardListPage::test_get_ui_content_type_is_html
+  /home/dmarble/git/ai_geenome_test/genotype_ui_dashboard_2/.venv/lib/python3.14/site-packages/pydantic/fields.py:683: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f5aa5a96e30>
+    continue
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/dashboard/test_web_ui_adaptor.py::TestWebUIDashboardListPage::test_get_ui_content_type_is_html
+  /home/dmarble/git/ai_geenome_test/genotype_ui_dashboard_2/.venv/lib/python3.14/site-packages/pydantic/fields.py:683: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f5aa5a96f20>
+    continue
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/dashboard/test_web_ui_adaptor.py::TestWebUIDashboardListPage::test_get_ui_content_type_is_html
+  /home/dmarble/git/ai_geenome_test/genotype_ui_dashboard_2/.venv/lib/python3.14/site-packages/pydantic/fields.py:683: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f5aa5a97100>
+    continue
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/dashboard/test_web_ui_adaptor.py::TestWebUIDashboardListPage::test_get_ui_content_type_is_html
+  /home/dmarble/git/ai_geenome_test/genotype_ui_dashboard_2/.venv/lib/python3.14/site-packages/pydantic/fields.py:683: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f5aa5a971f0>
+    continue
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/dashboard/test_web_ui_adaptor.py::TestWebUIDashboardListPage::test_get_ui_content_type_is_html
+  /home/dmarble/git/ai_geenome_test/genotype_ui_dashboard_2/.venv/lib/python3.14/site-packages/pydantic/fields.py:683: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f5aa5a97010>
+    continue
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/dashboard/test_web_ui_adaptor.py::TestWebUIDashboardListPage::test_get_ui_content_type_is_html
+  /home/dmarble/git/ai_geenome_test/genotype_ui_dashboard_2/.venv/lib/python3.14/site-packages/pydantic/fields.py:683: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f5aa5a972e0>
+    continue
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/dashboard/test_web_ui_adaptor.py::TestWebUIDashboardListPage::test_get_ui_content_type_is_html
+  /home/dmarble/git/ai_geenome_test/genotype_ui_dashboard_2/.venv/lib/python3.14/site-packages/pydantic/fields.py:683: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f5aa5a973d0>
+    continue
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/dashboard/test_web_ui_adaptor.py::TestWebUIDashboardListPage::test_get_ui_content_type_is_html
+  /home/dmarble/git/ai_geenome_test/genotype_ui_dashboard_2/.venv/lib/python3.14/site-packages/pydantic/fields.py:683: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f5aa5a974c0>
+    continue
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/dashboard/test_web_ui_adaptor.py::TestWebUIDashboardListPage::test_get_ui_content_type_is_html
+  /home/dmarble/git/ai_geenome_test/genotype_ui_dashboard_2/.venv/lib/python3.14/site-packages/pydantic/fields.py:683: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f5aa5a975b0>
+    continue
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/dashboard/test_web_ui_adaptor.py::TestWebUIDashboardListPage::test_get_ui_content_type_is_html
+  /home/dmarble/git/ai_geenome_test/genotype_ui_dashboard_2/.venv/lib/python3.14/site-packages/pydantic/fields.py:683: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f5aa5a976a0>
+    continue
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/dashboard/test_web_ui_adaptor.py::TestWebUIDashboardListPage::test_get_ui_content_type_is_html
+  /home/dmarble/git/ai_geenome_test/genotype_ui_dashboard_2/.venv/lib/python3.14/site-packages/pydantic/fields.py:683: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f5aa5a97790>
+    continue
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/dashboard/test_web_ui_adaptor.py::TestWebUIDashboardListPage::test_get_ui_content_type_is_html
+  /home/dmarble/git/ai_geenome_test/genotype_ui_dashboard_2/.venv/lib/python3.14/site-packages/pydantic/fields.py:683: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f5aa5a97880>
+    continue
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.14.3-final-0 ________________
+
+Name                                                      Stmts   Miss  Cover   Missing
+---------------------------------------------------------------------------------------
+domain/__init__.py                                            0      0   100%
+domain/dashboard/__init__.py                                  0      0   100%
+domain/dashboard/core/__init__.py                             0      0   100%
+domain/dashboard/core/adaptors/__init__.py                    0      0   100%
+domain/dashboard/core/adaptors/i_dashboard_adaptor.py        12     12     0%   8-31
+domain/dashboard/core/adaptors/i_web_ui_adaptor.py            6      6     0%   9-20
+domain/dashboard/core/adaptors/rest_routes.py                73      5    93%   53, 85-86, 115-116
+domain/dashboard/core/adaptors/web_ui_routes.py              13      0   100%
+domain/dashboard/core/commands.py                            64      0   100%
+domain/dashboard/core/models.py                              21      1    95%   22
+domain/dashboard/core/ports/__init__.py                       0      0   100%
+domain/dashboard/core/ports/i_dashboard_repo.py              13      0   100%
+domain/dashboard/core/ports/in_memory_dashboard_repo.py      16      0   100%
+domain/dashboard/core/ports/sqlite_dashboard_repo.py         46      0   100%
+main.py                                                      18     18     0%   11-47
+tests/__init__.py                                             0      0   100%
+tests/dashboard/__init__.py                                   0      0   100%
+tests/dashboard/test_adaptors.py                            158      1    99%   223
+tests/dashboard/test_core.py                                165      1    99%   250
+tests/dashboard/test_ports.py                                80      1    99%   123
+tests/dashboard/test_sqlite_port.py                         124      1    99%   193
+tests/dashboard/test_web_ui_adaptor.py                      134      1    99%   198
+---------------------------------------------------------------------------------------
+TOTAL                                                       943     47    95%
+111 passed, 20 warnings in 1.21s
+  RESULT   111 passed, 20 warnings in 1.21s
+  COVERAGE 95%
+
+──────────────────────────────────────────
+DIR  baseline/ui_dashboard/run3
+error: Failed to create virtual environment
+  Caused by: A virtual environment already exists at `/home/dmarble/git/ai_geenome_test/baseline_ui_dashboard_3/.venv`. Use `--clear` to replace it
+......................................                                   [100%]/home/dmarble/git/ai_geenome_test/baseline_ui_dashboard_3/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fe6bfb21300>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_ui_dashboard_3/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fe6bfa47880>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/baseline_ui_dashboard_3/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fe6bfa476a0>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+
+=============================== warnings summary ===============================
+test_db.py::test_ui_not_in_openapi_schema
+  /home/dmarble/git/ai_geenome_test/baseline_ui_dashboard_3/.venv/lib/python3.14/site-packages/pydantic/_internal/_schema_generation_shared.py:72: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fe6bfa47b50>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+test_db.py::test_ui_not_in_openapi_schema
+  /home/dmarble/git/ai_geenome_test/baseline_ui_dashboard_3/.venv/lib/python3.14/site-packages/pydantic/_internal/_schema_generation_shared.py:72: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fe6bfa46f20>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+test_db.py::test_ui_not_in_openapi_schema
+  /home/dmarble/git/ai_geenome_test/baseline_ui_dashboard_3/.venv/lib/python3.14/site-packages/pydantic/_internal/_schema_generation_shared.py:72: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fe6bfa44a90>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+test_db.py::test_ui_not_in_openapi_schema
+  /home/dmarble/git/ai_geenome_test/baseline_ui_dashboard_3/.venv/lib/python3.14/site-packages/pydantic/_internal/_schema_generation_shared.py:72: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fe6bfa47970>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+test_db.py::test_ui_not_in_openapi_schema
+  /home/dmarble/git/ai_geenome_test/baseline_ui_dashboard_3/.venv/lib/python3.14/site-packages/pydantic/_internal/_schema_generation_shared.py:72: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fe6bfa45030>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+test_db.py::test_ui_not_in_openapi_schema
+  /home/dmarble/git/ai_geenome_test/baseline_ui_dashboard_3/.venv/lib/python3.14/site-packages/pydantic/_internal/_schema_generation_shared.py:72: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fe6bfa46a70>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+test_db.py::test_ui_not_in_openapi_schema
+  /home/dmarble/git/ai_geenome_test/baseline_ui_dashboard_3/.venv/lib/python3.14/site-packages/pydantic/_internal/_schema_generation_shared.py:72: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fe6bfa47f10>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+test_db.py::test_ui_not_in_openapi_schema
+  /home/dmarble/git/ai_geenome_test/baseline_ui_dashboard_3/.venv/lib/python3.14/site-packages/pydantic/_internal/_schema_generation_shared.py:72: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fe6bfa47c40>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+test_db.py::test_ui_not_in_openapi_schema
+  /home/dmarble/git/ai_geenome_test/baseline_ui_dashboard_3/.venv/lib/python3.14/site-packages/pydantic/_internal/_schema_generation_shared.py:72: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fe6bfa47100>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+test_db.py::test_ui_not_in_openapi_schema
+  /home/dmarble/git/ai_geenome_test/baseline_ui_dashboard_3/.venv/lib/python3.14/site-packages/pydantic/_internal/_schema_generation_shared.py:72: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fe6bfa46980>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+test_db.py::test_ui_not_in_openapi_schema
+  /home/dmarble/git/ai_geenome_test/baseline_ui_dashboard_3/.venv/lib/python3.14/site-packages/pydantic/_internal/_schema_generation_shared.py:72: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fe6bfa45f30>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+test_db.py::test_ui_not_in_openapi_schema
+  /home/dmarble/git/ai_geenome_test/baseline_ui_dashboard_3/.venv/lib/python3.14/site-packages/pydantic/_internal/_schema_generation_shared.py:72: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fe6bfa463e0>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+test_db.py::test_ui_not_in_openapi_schema
+  /home/dmarble/git/ai_geenome_test/baseline_ui_dashboard_3/.venv/lib/python3.14/site-packages/pydantic/_internal/_schema_generation_shared.py:72: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fe6bfa47a60>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+test_db.py::test_ui_not_in_openapi_schema
+  /home/dmarble/git/ai_geenome_test/baseline_ui_dashboard_3/.venv/lib/python3.14/site-packages/pydantic/_internal/_schema_generation_shared.py:72: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fe6bfa46890>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+test_db.py::test_api_values_history_via_sqlite
+  /home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/inspect.py:2972: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fe6bfa474c0>
+    def __init__(self, parameters=None, *, return_annotation=_empty,
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+test_db.py::test_api_values_history_via_sqlite
+  /home/dmarble/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/inspect.py:2972: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fe6bfa45120>
+    def __init__(self, parameters=None, *, return_annotation=_empty,
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.14.3-final-0 ________________
+
+Name          Stmts   Miss  Cover   Missing
+-------------------------------------------
+db.py            61      3    95%   55-57
+main.py          70      1    99%   30
+models.py        49      0   100%
+storage.py       18      4    78%   21-24
+test_api.py     124      0   100%
+test_db.py      141      0   100%
+-------------------------------------------
+TOTAL           463      8    98%
+38 passed, 16 warnings in 1.06s
+  RESULT   38 passed, 16 warnings in 1.06s
+  COVERAGE 98%
+
+──────────────────────────────────────────
+DIR  genotype/ui_dashboard/run3
+error: Failed to create virtual environment
+  Caused by: A virtual environment already exists at `/home/dmarble/git/ai_geenome_test/genotype_ui_dashboard_3/.venv`. Use `--clear` to replace it
+.....................................................                    [100%]/home/dmarble/git/ai_geenome_test/genotype_ui_dashboard_3/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f0c734d1f30>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/genotype_ui_dashboard_3/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f0c734d2020>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/genotype_ui_dashboard_3/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f0c734d2110>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/genotype_ui_dashboard_3/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f0c734d2200>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/genotype_ui_dashboard_3/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f0c734d22f0>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/genotype_ui_dashboard_3/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f0c734d23e0>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/genotype_ui_dashboard_3/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f0c734d24d0>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/genotype_ui_dashboard_3/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f0c734d25c0>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/genotype_ui_dashboard_3/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f0c734d26b0>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/genotype_ui_dashboard_3/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f0c734d27a0>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/dmarble/git/ai_geenome_test/genotype_ui_dashboard_3/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f0c734d2980>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.14.3-final-0 ________________
+
+Name                                                            Stmts   Miss  Cover   Missing
+---------------------------------------------------------------------------------------------
+domain/__init__.py                                                  0      0   100%
+domain/dashboard/__init__.py                                        0      0   100%
+domain/dashboard/core/__init__.py                                   0      0   100%
+domain/dashboard/core/adaptors/__init__.py                          0      0   100%
+domain/dashboard/core/adaptors/dashboard_controller.py             44      0   100%
+domain/dashboard/core/adaptors/i_dashboard_controller.py           14      0   100%
+domain/dashboard/core/adaptors/i_ui_router.py                       7      0   100%
+domain/dashboard/core/adaptors/ui_router.py                        33      1    97%   93
+domain/dashboard/core/models.py                                    35      0   100%
+domain/dashboard/core/ports/__init__.py                             0      0   100%
+domain/dashboard/core/ports/i_dashboard_repository.py              10      0   100%
+domain/dashboard/core/ports/in_memory_dashboard_repository.py      12      0   100%
+domain/dashboard/core/ports/sqlite_dashboard_repository.py         51      1    98%   93
+main.py                                                            65     65     0%   11-141
+tests/__init__.py                                                   0      0   100%
+tests/dashboard/__init__.py                                         0      0   100%
+tests/dashboard/test_adaptors.py                                  101      1    99%   156
+tests/dashboard/test_core.py                                       79      1    99%   116
+tests/dashboard/test_ports.py                                      56      1    98%   80
+tests/dashboard/test_sqlite_ports.py                               89      1    99%   122
+tests/dashboard/test_ui_adaptor.py                                 90      1    99%   131
+---------------------------------------------------------------------------------------------
+TOTAL                                                             686     72    90%
+53 passed in 0.19s
+  RESULT   53 passed in 0.19s
+  COVERAGE 90%
+
+======================================================================
+Test + Coverage Run  finished: 2026-03-30T21:09:23-04:00
+Results: /home/dmarble/git/ai_geenome_test/test_results_20260330_210842.log
+======================================================================

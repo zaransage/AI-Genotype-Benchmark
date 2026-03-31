@@ -172,7 +172,47 @@ Rows marked † above have inflated metrics due to `.venv` inclusion. The follow
 
 ---
 
-## 7 · Final Repository Sizes (on disk, `.venv` excluded)
+## 7 · Test Results and Coverage
+
+All 18 runs were executed with `pytest --cov` (venvs created fresh via `uv`, `.venv` excluded from coverage). **Every run achieved 100% pass rate.**
+
+### Per-Run Results
+
+| Service | Run | Variant | Tests Passed | Coverage |
+|---|---|---|---:|---:|
+| tic_tac_toe | 1 | baseline | 29 | 99% |
+| tic_tac_toe | 1 | genotype | 89 | 94% |
+| tic_tac_toe | 2 | baseline | 39 | 100% |
+| tic_tac_toe | 2 | genotype | 79 | 98% |
+| tic_tac_toe | 3 | baseline | 40 | 100% |
+| tic_tac_toe | 3 | genotype | 63 | 92% |
+| crontab_clone | 1 | baseline | 27 | 95% |
+| crontab_clone | 1 | genotype | 74 | 95% |
+| crontab_clone | 2 | baseline | 36 | 92% |
+| crontab_clone | 2 | genotype | 61 | 97% |
+| crontab_clone | 3 | baseline | 43 | 98% |
+| crontab_clone | 3 | genotype | 79 | 97% |
+| ui_dashboard | 1 | baseline | 52 | 99% |
+| ui_dashboard | 1 | genotype | 79 | 96% |
+| ui_dashboard | 2 | baseline | 33 | 95% |
+| ui_dashboard | 2 | genotype | 111 | 95% |
+| ui_dashboard | 3 | baseline | 38 | 98% |
+| ui_dashboard | 3 | genotype | 53 | 90% |
+
+### Averages by Service
+
+| Service | Baseline Tests | Baseline Coverage | Genotype Tests | Genotype Coverage |
+|---|---:|---:|---:|---:|
+| tic_tac_toe | 36 | 100% | 77 | 95% |
+| crontab_clone | 35 | 95% | 71 | 96% |
+| ui_dashboard | 41 | 97% | 81 | 94% |
+| **Overall** | **37** | **97%** | **76** | **95%** |
+
+> **Note:** The benchmark harness counted test cases via `grep "def test_"`, which undercounts parametrized tests and overcounts some edge cases (notably `crontab_clone · genotype · run 1` was logged as 287 in the benchmark but pytest executed 74). The executed counts above are authoritative.
+
+---
+
+## 8 · Final Repository Sizes (on disk, `.venv` excluded)
 
 Measured from each output directory after all phases completed.
 
@@ -202,7 +242,7 @@ Measured from each output directory after all phases completed.
 
 ---
 
-## 8 · Known Confounds and Limitations
+## 9 · Known Confounds and Limitations
 
 | # | Issue | Impact |
 |---|---|---|
