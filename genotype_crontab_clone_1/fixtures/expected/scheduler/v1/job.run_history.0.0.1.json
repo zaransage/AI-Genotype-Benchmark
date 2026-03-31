@@ -1,0 +1,12 @@
+[
+  {
+    "job_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "status": "success",
+    "output": "Deleted 3 files."
+  },
+  {
+    "job_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "status": "failure",
+    "output": "find: '/var/log': Permission denied"
+  }
+]

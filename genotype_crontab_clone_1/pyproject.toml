@@ -1,0 +1,17 @@
+[project]
+name = "genotype-crontab-clone"
+version = "0.0.1"
+description = "Hexagonal REST API job scheduler (crontab clone)"
+requires-python = ">=3.14"
+
+[tool.black]
+# Exclude aligned-column data model and adaptor mapping files from auto-formatting
+exclude = '''
+/(
+    domain/scheduler/core/job\.py
+  | domain/scheduler/core/ports/in_memory_job_repository\.py
+  | domain/scheduler/core/ports/sqlite_job_repository\.py
+  | domain/scheduler/core/adaptors/http_adaptor\.py
+  | domain/scheduler/core/adaptors/web_ui_adaptor\.py
+)/
+'''

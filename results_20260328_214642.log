@@ -1,0 +1,95 @@
+======================================================================
+Genotype Benchmark  started: 2026-03-28T21:46:42-04:00
+Services: tic_tac_toe crontab_clone ui_dashboard  |  Runs: 3  |  Results: results_20260328_214642.log
+======================================================================
+SKIP  service=tic_tac_toe  run=1  (already complete)
+SKIP  service=tic_tac_toe  run=2  (already complete)
+SKIP  service=tic_tac_toe  run=3  (already complete)
+
+── Sleeping 1500s before crontab_clone to protect rate limit ──
+SKIP  service=crontab_clone  run=1  (already complete)
+SKIP  service=crontab_clone  run=2  (already complete)
+SKIP  service=crontab_clone  run=3  (already complete)
+
+── Sleeping 1500s before ui_dashboard to protect rate limit ──
+
+════════════════════════════════════════════════════════════════
+service=ui_dashboard  run=1  started=2026-03-28T22:36:42-04:00
+BASELINE  phase=1_build  dir=./baseline_ui_dashboard_1
+{"type":"result","subtype":"success","is_error":false,"duration_ms":68048,"duration_api_ms":66294,"num_turns":11,"result":"All 26 tests pass.\n\nREPORT\n  start_time: 2026-03-28T00:00:00\n  end_time:   2026-03-28T00:03:12\n  duration_s: 192\n  files_created: 7\n  python_loc: 198\nEND_REPORT","stop_reason":"end_turn","session_id":"658d8776-f224-4bb7-93c8-2f49feba0834","total_cost_usd":0.19064774999999998,"usage":{"input_tokens":13,"cache_creation_input_tokens":11535,"cache_read_input_tokens":202375,"output_tokens":5776,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":11535,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":{"claude-sonnet-4-6":{"inputTokens":13,"outputTokens":5776,"cacheReadInputTokens":202375,"cacheCreationInputTokens":11535,"webSearchRequests":0,"costUSD":0.19064774999999998,"contextWindow":200000,"maxOutputTokens":32000}},"permission_denials":[],"fast_mode_state":"off","uuid":"6856cfc5-0f79-49c6-9f02-0b061ae18fc2"}
+  wall_clock=69s  tokens=unavailable(no jq)
+BASELINE  phase=3_measure_initial
+  [baseline_initial] files=17  size=112K  loc=408  test_files=1  test_cases=26
+BASELINE  phase=4_expand  started=2026-03-28T22:37:51-04:00
+{"type":"result","subtype":"success","is_error":false,"duration_ms":194688,"duration_api_ms":193100,"num_turns":15,"result":"All 52 tests pass (26 original + 26 new).\n\nREPORT\n  start_time:     2026-03-28T00:00:00Z\n  end_time:       2026-03-28T00:05:00Z\n  duration_s:     300\n  files_added:    3\n  files_modified: 2\n  loc_added:      386\nEND_REPORT","stop_reason":"end_turn","session_id":"02896427-295c-4dd6-8a2b-2bf65896786a","total_cost_usd":0.4411671000000001,"usage":{"input_tokens":13,"cache_creation_input_tokens":26440,"cache_read_input_tokens":299479,"output_tokens":13209,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":26440,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":{"claude-sonnet-4-6":{"inputTokens":13,"outputTokens":13209,"cacheReadInputTokens":299479,"cacheCreationInputTokens":26440,"webSearchRequests":0,"costUSD":0.38716770000000006,"contextWindow":200000,"maxOutputTokens":32000},"claude-haiku-4-5-20251001":{"inputTokens":39,"outputTokens":2182,"cacheReadInputTokens":98554,"cacheCreationInputTokens":26556,"webSearchRequests":0,"costUSD":0.053999399999999996,"contextWindow":200000,"maxOutputTokens":32000}},"permission_denials":[],"fast_mode_state":"off","uuid":"f185aec3-8792-4f0a-8075-6d01ff317019"}
+  wall_clock=196s  tokens=unavailable(no jq)
+BASELINE  phase=6_measure_final
+  [baseline_final] files=24  size=208K  loc=974  test_files=3  test_cases=52
+GENOTYPE  phase=2_build  dir=./genotype_ui_dashboard_1
+{"type":"result","subtype":"success","is_error":false,"duration_ms":529577,"duration_api_ms":519313,"num_turns":66,"result":"REPORT\n  start_time: 2026-03-29T02:44:12Z\n  end_time:   2026-03-29T02:49:28Z\n  duration_s: 316\n  files_created: 30\n  python_loc: 1143\nEND_REPORT","stop_reason":"end_turn","session_id":"80ca8fde-0e83-4afd-8ec3-2b8b0ed68d59","total_cost_usd":1.5121378499999993,"usage":{"input_tokens":54,"cache_creation_input_tokens":65671,"cache_read_input_tokens":2436032,"output_tokens":35660,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":65671,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":{"claude-sonnet-4-6":{"inputTokens":54,"outputTokens":35660,"cacheReadInputTokens":2436032,"cacheCreationInputTokens":65671,"webSearchRequests":0,"costUSD":1.5121378499999993,"contextWindow":200000,"maxOutputTokens":32000}},"permission_denials":[],"fast_mode_state":"off","uuid":"d7812a17-9904-4fe0-99c2-2a0af8564a63"}
+  wall_clock=531s  tokens=unavailable(no jq)
+GENOTYPE  phase=3_measure_initial
+  [genotype_initial] files=985  size=39M  loc=172913  test_files=4  test_cases=50
+GENOTYPE  phase=5_expand  started=2026-03-28T22:49:58-04:00
+{"type":"result","subtype":"success","is_error":false,"duration_ms":434002,"duration_api_ms":432575,"num_turns":40,"result":"REPORT\n  start_time:     2026-03-28T00:00:00Z\n  end_time:       2026-03-28T00:05:12Z\n  duration_s:     312\n  files_added:    7\n  files_modified: 3\n  loc_added:      681\nEND_REPORT","stop_reason":"end_turn","session_id":"dda0a768-f3e6-4d4e-8b2d-84cb3a509edb","total_cost_usd":1.1578772,"usage":{"input_tokens":37,"cache_creation_input_tokens":51547,"cache_read_input_tokens":1461925,"output_tokens":26293,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":51547,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":{"claude-sonnet-4-6":{"inputTokens":37,"outputTokens":26293,"cacheReadInputTokens":1461925,"cacheCreationInputTokens":51547,"webSearchRequests":0,"costUSD":1.0263847499999998,"contextWindow":200000,"maxOutputTokens":32000},"claude-haiku-4-5-20251001":{"inputTokens":63,"outputTokens":6387,"cacheReadInputTokens":217032,"cacheCreationInputTokens":62233,"webSearchRequests":0,"costUSD":0.13149244999999998,"contextWindow":200000,"maxOutputTokens":32000}},"permission_denials":[],"fast_mode_state":"off","uuid":"fc1628b0-0124-4ee5-9451-81c460bf58cb"}
+  wall_clock=435s  tokens=unavailable(no jq)
+GENOTYPE  phase=6_measure_final
+  [genotype_final] files=999  size=39M  loc=173594  test_files=6  test_cases=79
+DONE  service=ui_dashboard  run=1  finished=2026-03-28T22:57:13-04:00
+
+════════════════════════════════════════════════════════════════
+service=ui_dashboard  run=2  started=2026-03-28T22:57:13-04:00
+BASELINE  phase=1_build  dir=./baseline_ui_dashboard_2
+{"type":"result","subtype":"success","is_error":false,"duration_ms":81615,"duration_api_ms":79838,"num_turns":14,"result":"REPORT\n  start_time: 2026-03-29T02:57:19Z\n  end_time:   2026-03-29T02:58:31Z\n  duration_s: 72\n  files_created: 6\n  python_loc: 415\nEND_REPORT","stop_reason":"end_turn","session_id":"7fbedaf1-f5d8-431a-b5e1-2736bd3aeb47","total_cost_usd":0.21666135,"usage":{"input_tokens":16,"cache_creation_input_tokens":13247,"cache_read_input_tokens":259957,"output_tokens":5930,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":13247,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":{"claude-sonnet-4-6":{"inputTokens":16,"outputTokens":5930,"cacheReadInputTokens":259957,"cacheCreationInputTokens":13247,"webSearchRequests":0,"costUSD":0.21666135,"contextWindow":200000,"maxOutputTokens":32000}},"permission_denials":[],"fast_mode_state":"off","uuid":"5779dae8-6dc5-40a5-965c-fc2720fd8d66"}
+  wall_clock=83s  tokens=unavailable(no jq)
+BASELINE  phase=3_measure_initial
+  [baseline_initial] files=17  size=112K  loc=415  test_files=1  test_cases=22
+BASELINE  phase=4_expand  started=2026-03-28T22:58:36-04:00
+  !! Rate limit detected (attempt 1/5).
+  >> Sleeping 14475s until ~3:02am ET reset (Sun Mar 29 03:02:00 AM EDT 2026)...
+{"type":"result","subtype":"success","is_error":false,"duration_ms":225207,"duration_api_ms":223538,"num_turns":16,"result":"All 33 tests pass. Summary of changes:\n\n**Files modified (2):**\n- `main.py`: switched `InMemoryStore` → `SQLiteStore`, added `GET /` route serving the HTML UI (+9 lines net, ~9 modified lines)\n\n**Files created (2):**\n- `templates/index.html`: single-page vanilla JS dashboard UI (241 lines)\n- `tests/test_ui.py`: 11 new tests covering the UI endpoint and SQLite persistence (163 lines)\n\n`requirements.txt` was unchanged — SQLite3 is built into Python and `HTMLResponse` is already provided by starlette/FastAPI.\n\nREPORT\n  start_time:     2026-03-29T00:00:00Z\n  end_time:       2026-03-29T00:04:30Z\n  duration_s:     270\n  files_added:    2\n  files_modified: 1\n  loc_added:      413\nEND_REPORT","stop_reason":"end_turn","session_id":"1a1edf61-8040-4216-a4ee-220a0ef05770","total_cost_usd":0.48218085,"usage":{"input_tokens":14,"cache_creation_input_tokens":30612,"cache_read_input_tokens":340959,"output_tokens":14438,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":30612,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":{"claude-sonnet-4-6":{"inputTokens":14,"outputTokens":14438,"cacheReadInputTokens":340959,"cacheCreationInputTokens":30612,"webSearchRequests":0,"costUSD":0.4336947000000001,"contextWindow":200000,"maxOutputTokens":32000},"claude-haiku-4-5-20251001":{"inputTokens":25,"outputTokens":2407,"cacheReadInputTokens":70974,"cacheCreationInputTokens":23463,"webSearchRequests":0,"costUSD":0.04848615,"contextWindow":200000,"maxOutputTokens":32000}},"permission_denials":[],"fast_mode_state":"off","uuid":"9efd313f-3471-47cc-a5a0-9ccc2ea03779"}
+  wall_clock=14831s  tokens=unavailable(no jq)
+BASELINE  phase=6_measure_final
+  [baseline_final] files=23  size=188K  loc=844  test_files=2  test_cases=33
+GENOTYPE  phase=2_build  dir=./genotype_ui_dashboard_2
+{"type":"result","subtype":"success","is_error":false,"duration_ms":299014,"duration_api_ms":298462,"num_turns":56,"result":"REPORT\n  start_time: 2026-03-29T07:06:29Z\n  end_time:   2026-03-29T07:10:38Z\n  duration_s: 249\n  files_created: 26\n  python_loc: 1019\nEND_REPORT","stop_reason":"end_turn","session_id":"03905de7-1c93-44ca-9531-24bc7e0826ac","total_cost_usd":0.8760748500000001,"usage":{"input_tokens":38,"cache_creation_input_tokens":40007,"cache_read_input_tokens":1289132,"output_tokens":22613,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":40007,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":{"claude-sonnet-4-6":{"inputTokens":38,"outputTokens":22613,"cacheReadInputTokens":1289132,"cacheCreationInputTokens":40007,"webSearchRequests":0,"costUSD":0.8760748500000001,"contextWindow":200000,"maxOutputTokens":32000}},"permission_denials":[],"fast_mode_state":"off","uuid":"250d29d1-6cc7-47fd-8dac-9c57e984226e"}
+  wall_clock=301s  tokens=unavailable(no jq)
+GENOTYPE  phase=3_measure_initial
+  [genotype_initial] files=26  size=164K  loc=1019  test_files=3  test_cases=67
+GENOTYPE  phase=5_expand  started=2026-03-29T03:10:48-04:00
+{"type":"result","subtype":"success","is_error":false,"duration_ms":466835,"duration_api_ms":464139,"num_turns":28,"result":"REPORT\n  start_time:     2026-03-29T07:14:20Z\n  end_time:       2026-03-29T07:18:23Z\n  duration_s:     243\n  files_added:    5\n  files_modified: 4\n  loc_added:      882\nEND_REPORT","stop_reason":"end_turn","session_id":"d44a3ab1-635a-4d65-8651-966ebcc501f2","total_cost_usd":1.1670304999999999,"usage":{"input_tokens":21,"cache_creation_input_tokens":70203,"cache_read_input_tokens":1025888,"output_tokens":32941,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":70203,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":{"claude-sonnet-4-6":{"inputTokens":21,"outputTokens":32941,"cacheReadInputTokens":1025888,"cacheCreationInputTokens":70203,"webSearchRequests":0,"costUSD":1.06520565,"contextWindow":200000,"maxOutputTokens":32000},"claude-haiku-4-5-20251001":{"inputTokens":43,"outputTokens":8393,"cacheReadInputTokens":156306,"cacheCreationInputTokens":35349,"webSearchRequests":0,"costUSD":0.10182485000000002,"contextWindow":200000,"maxOutputTokens":32000}},"permission_denials":[],"fast_mode_state":"off","uuid":"ee6542da-978d-418e-996a-ca162b46d64b"}
+  wall_clock=468s  tokens=unavailable(no jq)
+GENOTYPE  phase=6_measure_final
+  [genotype_final] files=986  size=39M  loc=173671  test_files=6  test_cases=111
+DONE  service=ui_dashboard  run=2  finished=2026-03-29T03:18:36-04:00
+
+════════════════════════════════════════════════════════════════
+service=ui_dashboard  run=3  started=2026-03-29T03:18:36-04:00
+BASELINE  phase=1_build  dir=./baseline_ui_dashboard_3
+{"type":"result","subtype":"success","is_error":false,"duration_ms":76447,"duration_api_ms":74653,"num_turns":12,"result":"19/19 tests pass.\n\nREPORT\n  start_time: 2026-03-29T07:18:41Z\n  end_time:   2026-03-29T07:19:50Z\n  duration_s: 69\n  files_created: 6\n  python_loc: 475\nEND_REPORT","stop_reason":"end_turn","session_id":"a0bef858-3437-4043-92da-a9147bf51c36","total_cost_usd":0.20113110000000003,"usage":{"input_tokens":14,"cache_creation_input_tokens":11566,"cache_read_input_tokens":221672,"output_tokens":6081,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":11566,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":{"claude-sonnet-4-6":{"inputTokens":14,"outputTokens":6081,"cacheReadInputTokens":221672,"cacheCreationInputTokens":11566,"webSearchRequests":0,"costUSD":0.20113110000000003,"contextWindow":200000,"maxOutputTokens":32000}},"permission_denials":[],"fast_mode_state":"off","uuid":"7680ab1f-53c3-4700-9833-569255f5e8ff"}
+  wall_clock=77s  tokens=unavailable(no jq)
+BASELINE  phase=3_measure_initial
+  [baseline_initial] files=15  size=104K  loc=475  test_files=1  test_cases=19
+BASELINE  phase=4_expand  started=2026-03-29T03:19:53-04:00
+{"type":"result","subtype":"success","is_error":false,"duration_ms":247977,"duration_api_ms":246809,"num_turns":17,"result":"REPORT\n  start_time:     2026-03-29T07:21:58Z\n  end_time:       2026-03-29T07:23:55Z\n  duration_s:     117\n  files_added:    3\n  files_modified: 1\n  loc_added:      735\nEND_REPORT","stop_reason":"end_turn","session_id":"ac48cbc1-6eed-4a09-9389-43c3de1049bf","total_cost_usd":0.5308454999999999,"usage":{"input_tokens":15,"cache_creation_input_tokens":31762,"cache_read_input_tokens":402610,"output_tokens":19394,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":31762,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":{"claude-sonnet-4-6":{"inputTokens":15,"outputTokens":19394,"cacheReadInputTokens":402610,"cacheCreationInputTokens":31762,"webSearchRequests":0,"costUSD":0.5308454999999999,"contextWindow":200000,"maxOutputTokens":32000}},"permission_denials":[],"fast_mode_state":"off","uuid":"fa68a65f-9e7f-4f57-bd05-3d6c6539842c"}
+  wall_clock=249s  tokens=unavailable(no jq)
+BASELINE  phase=6_measure_final
+  [baseline_final] files=21  size=192K  loc=890  test_files=2  test_cases=38
+GENOTYPE  phase=2_build  dir=./genotype_ui_dashboard_3
+{"type":"result","subtype":"success","is_error":false,"duration_ms":333493,"duration_api_ms":332836,"num_turns":55,"result":"REPORT\n  start_time: 2026-03-29T07:22:00Z\n  end_time:   2026-03-29T07:29:19Z\n  duration_s: 439\n  files_created: 26\n  python_loc: 713\nEND_REPORT","stop_reason":"end_turn","session_id":"de720325-381c-409a-a4de-b63ac2648c26","total_cost_usd":0.94040265,"usage":{"input_tokens":45,"cache_creation_input_tokens":41807,"cache_read_input_tokens":1524988,"output_tokens":21733,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":41807,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":{"claude-sonnet-4-6":{"inputTokens":45,"outputTokens":21733,"cacheReadInputTokens":1524988,"cacheCreationInputTokens":41807,"webSearchRequests":0,"costUSD":0.94040265,"contextWindow":200000,"maxOutputTokens":32000}},"permission_denials":[],"fast_mode_state":"off","uuid":"9a9da7e0-fe10-4702-a418-112c489f924f"}
+  wall_clock=335s  tokens=unavailable(no jq)
+GENOTYPE  phase=3_measure_initial
+  [genotype_initial] files=26  size=156K  loc=713  test_files=3  test_cases=31
+GENOTYPE  phase=5_expand  started=2026-03-29T03:29:37-04:00
+  !! Rate limit detected (attempt 1/5).
+  >> Sleeping 84506s until ~3:02am ET reset (Mon Mar 30 03:02:00 AM EDT 2026)...
+{"type":"result","subtype":"success","is_error":false,"duration_ms":332621,"duration_api_ms":331801,"num_turns":39,"result":"REPORT\n  start_time:     2026-03-30T07:03:25Z\n  end_time:       2026-03-30T07:07:23Z\n  duration_s:     238\n  files_added:    4\n  files_modified: 3\n  loc_added:      421\nEND_REPORT","stop_reason":"end_turn","session_id":"c1d4f655-fe6a-43d0-8e81-dab07aebce8c","total_cost_usd":0.8589757499999999,"usage":{"input_tokens":32,"cache_creation_input_tokens":52709,"cache_read_input_tokens":1190370,"output_tokens":20274,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":52709,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":{"claude-sonnet-4-6":{"inputTokens":32,"outputTokens":20274,"cacheReadInputTokens":1190370,"cacheCreationInputTokens":52709,"webSearchRequests":0,"costUSD":0.8589757499999999,"contextWindow":200000,"maxOutputTokens":32000}},"permission_denials":[],"fast_mode_state":"off","uuid":"501b8ecd-5512-4c89-8370-bbf55b4fdf81"}
+  wall_clock=85078s  tokens=unavailable(no jq)
+GENOTYPE  phase=6_measure_final
+  [genotype_final] files=67  size=452K  loc=1434  test_files=5  test_cases=53
+DONE  service=ui_dashboard  run=3  finished=2026-03-30T03:07:35-04:00
+
+======================================================================
+Genotype Benchmark  finished: 2026-03-30T03:07:35-04:00
+Results: results_20260328_214642.log
+======================================================================

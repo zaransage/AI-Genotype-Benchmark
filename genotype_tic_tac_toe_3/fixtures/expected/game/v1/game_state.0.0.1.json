@@ -1,0 +1,11 @@
+{
+    "game_id": "test-game-id-001",
+    "board": [
+        ["X", "",  ""],
+        ["",  "",  ""],
+        ["",  "",  ""]
+    ],
+    "current_player": "O",
+    "status": "in_progress",
+    "winner": null
+}

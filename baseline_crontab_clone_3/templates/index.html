@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Job Scheduler</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, sans-serif; background: #f5f6fa; color: #2d3436; }
+    header {
+      background: #2d3436; color: #fff; padding: 1rem 1.5rem;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    header h1 { font-size: 1.2rem; font-weight: 600; letter-spacing: .5px; }
+    #refresh-indicator { font-size: .75rem; opacity: .7; }
+    main { padding: 1.5rem; max-width: 1200px; margin: 0 auto; }
+    section { background: #fff; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,.08); padding: 1.25rem; }
+    section + section { margin-top: 1.25rem; }
+    h2 { font-size: 1rem; font-weight: 600; margin-bottom: 1rem; color: #636e72; text-transform: uppercase; letter-spacing: .5px; }
+    table { width: 100%; border-collapse: collapse; font-size: .9rem; }
+    th { text-align: left; padding: .5rem .75rem; border-bottom: 2px solid #dfe6e9; color: #636e72; font-weight: 600; }
+    td { padding: .5rem .75rem; border-bottom: 1px solid #f0f0f0; vertical-align: middle; }
+    tr:last-child td { border-bottom: none; }
+    tr.clickable:hover td { background: #f8f9fb; cursor: pointer; }
+    tr.selected td { background: #e8f4fd; }
+    .badge { display: inline-block; padding: .15rem .55rem; border-radius: 999px; font-size: .75rem; font-weight: 600; }
+    .badge-ok    { background: #d5f5e3; color: #1e8449; }
+    .badge-fail  { background: #fde8e8; color: #c0392b; }
+    .badge-run   { background: #fff3cd; color: #856404; }
+    button {
+      border: none; border-radius: 5px; padding: .3rem .7rem; font-size: .8rem;
+      cursor: pointer; font-weight: 600; transition: opacity .15s;
+    }
+    button:hover { opacity: .8; }
+    .btn-trigger { background: #0984e3; color: #fff; }
+    .btn-delete  { background: #d63031; color: #fff; }
+    .empty-msg   { color: #b2bec3; font-style: italic; padding: .5rem 0; }
+    code { font-family: monospace; background: #f0f0f0; padding: .1rem .3rem; border-radius: 3px; }
+    #history-job-name { color: #0984e3; }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Job Scheduler</h1>
+  <span id="refresh-indicator">Auto-refreshes every 30s</span>
+</header>
+<main>
+  <section>
+    <h2>Scheduled Jobs</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Command</th>
+          <th>Cron</th>
+          <th>Created</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="jobs-body">
+        <tr><td colspan="5" class="empty-msg">Loading…</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="history-section">
+    <h2>Run History — <span id="history-job-name">select a job above</span></h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Started</th>
+          <th>Finished</th>
+          <th>Exit Code</th>
+          <th>Triggered By</th>
+          <th>Stdout</th>
+          <th>Stderr</th>
+        </tr>
+      </thead>
+      <tbody id="history-body">
+        <tr><td colspan="6" class="empty-msg">Click a job row to view its run history.</td></tr>
+      </tbody>
+    </table>
+  </section>
+</main>
+
+<script>
+  let _selectedJobId = null;
+
+  function fmt(iso) {
+    if (!iso) return '—';
+    return new Date(iso).toLocaleString();
+  }
+
+  function escHtml(str) {
+    return String(str ?? '')
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  async function loadJobs() {
+    let jobs;
+    try {
+      const r = await fetch('/jobs');
+      jobs = await r.json();
+    } catch {
+      return;
+    }
+    const tbody = document.getElementById('jobs-body');
+    if (!jobs.length) {
+      tbody.innerHTML = '<tr><td colspan="5" class="empty-msg">No jobs scheduled yet. Use POST /jobs to create one.</td></tr>';
+      return;
+    }
+    tbody.innerHTML = jobs.map(j => `
+      <tr class="clickable${_selectedJobId === j.id ? ' selected' : ''}" data-id="${escHtml(j.id)}" onclick="selectJob(this, '${escHtml(j.id)}', '${escHtml(j.name)}')">
+        <td><strong>${escHtml(j.name)}</strong></td>
+        <td><code>${escHtml(j.command)}</code></td>
+        <td><code>${escHtml(j.cron_expression)}</code></td>
+        <td>${fmt(j.created_at)}</td>
+        <td onclick="event.stopPropagation()">
+          <button class="btn-trigger" onclick="triggerJob('${escHtml(j.id)}')">&#9654; Run</button>
+          <button class="btn-delete"  onclick="deleteJob('${escHtml(j.id)}')">&#x2715; Delete</button>
+        </td>
+      </tr>
+    `).join('');
+  }
+
+  async function loadHistory(jobId, jobName) {
+    document.getElementById('history-job-name').textContent = jobName || jobId;
+    let history;
+    try {
+      const r = await fetch(`/jobs/${encodeURIComponent(jobId)}/history`);
+      if (!r.ok) { clearHistory(); return; }
+      history = await r.json();
+    } catch {
+      clearHistory(); return;
+    }
+    const tbody = document.getElementById('history-body');
+    if (!history.length) {
+      tbody.innerHTML = '<tr><td colspan="6" class="empty-msg">No runs recorded yet.</td></tr>';
+      return;
+    }
+    tbody.innerHTML = history.slice().reverse().map(h => {
+      const code = h.exit_code;
+      const badge = code === 0
+        ? `<span class="badge badge-ok">0</span>`
+        : code === null
+          ? `<span class="badge badge-run">—</span>`
+          : `<span class="badge badge-fail">${escHtml(code)}</span>`;
+      const trigger = h.triggered_manually ? 'Manual' : 'Scheduled';
+      return `
+        <tr>
+          <td>${fmt(h.started_at)}</td>
+          <td>${fmt(h.finished_at)}</td>
+          <td>${badge}</td>
+          <td>${trigger}</td>
+          <td><code>${escHtml((h.stdout || '').trim().slice(0, 120))}</code></td>
+          <td><code>${escHtml((h.stderr || '').trim().slice(0, 120))}</code></td>
+        </tr>
+      `;
+    }).join('');
+  }
+
+  function clearHistory() {
+    document.getElementById('history-body').innerHTML =
+      '<tr><td colspan="6" class="empty-msg">Could not load history.</td></tr>';
+  }
+
+  function selectJob(row, jobId, jobName) {
+    _selectedJobId = jobId;
+    document.querySelectorAll('#jobs-body tr').forEach(r => r.classList.remove('selected'));
+    row.classList.add('selected');
+    loadHistory(jobId, jobName);
+  }
+
+  async function triggerJob(jobId) {
+    try {
+      const r = await fetch(`/jobs/${encodeURIComponent(jobId)}/trigger`, { method: 'POST' });
+      if (r.ok && _selectedJobId === jobId) {
+        const job = document.querySelector(`#jobs-body tr[data-id="${jobId}"]`);
+        const name = job ? job.querySelector('td strong')?.textContent : jobId;
+        loadHistory(jobId, name);
+      }
+    } catch { /* ignore */ }
+  }
+
+  async function deleteJob(jobId) {
+    if (!confirm('Delete this job and its history?')) return;
+    try {
+      await fetch(`/jobs/${encodeURIComponent(jobId)}`, { method: 'DELETE' });
+      if (_selectedJobId === jobId) {
+        _selectedJobId = null;
+        document.getElementById('history-job-name').textContent = 'select a job above';
+        document.getElementById('history-body').innerHTML =
+          '<tr><td colspan="6" class="empty-msg">Click a job row to view its run history.</td></tr>';
+      }
+      loadJobs();
+    } catch { /* ignore */ }
+  }
+
+  // initial load + auto-refresh
+  loadJobs();
+  setInterval(async () => {
+    await loadJobs();
+    if (_selectedJobId) {
+      const job = document.querySelector(`#jobs-body tr[data-id="${_selectedJobId}"]`);
+      const name = job ? job.querySelector('td strong')?.textContent : _selectedJobId;
+      loadHistory(_selectedJobId, name);
+    }
+  }, 30000);
+</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+[
+  {
+    "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "name": "cleanup-logs",
+    "command": "find /var/log -name '*.log' -mtime +7 -delete",
+    "cron_expression": "0 2 * * *",
+    "created_at": "2026-03-28T20:00:00Z",
+    "enabled": true
+  },
+  {
+    "id": "7cb85f64-5717-4562-b3fc-2c963f66afa6",
+    "name": "backup-db",
+    "command": "pg_dump mydb > /backups/mydb.sql",
+    "cron_expression": "30 3 * * 0",
+    "created_at": "2026-03-28T20:01:00Z",
+    "enabled": true
+  }
+]

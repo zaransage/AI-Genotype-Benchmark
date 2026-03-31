@@ -1,0 +1,18 @@
+[project]
+name = "tic-tac-toe"
+version = "0.1.0"
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi>=0.115.0",
+    "uvicorn>=0.32.0",
+]
+
+[tool.black]
+# Aligned column formatting in model and adaptor mapping files is intentional — exclude from formatter.
+exclude = '''
+/(
+    domain/core/models\.py
+  | domain/core/adaptors/game_service\.py
+  | domain/core/ports/sqlite_game_archive\.py
+)/
+'''

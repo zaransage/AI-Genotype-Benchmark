@@ -1,0 +1,13 @@
+{
+    "game_id": "test-archive-001",
+    "outcome": "x_wins",
+    "winner":  "X",
+    "board":   [["X", "X", "X"], ["O", "O", ""], ["", "", ""]],
+    "moves": [
+        {"game_id": "test-archive-001", "player": "X", "row": 0, "col": 0},
+        {"game_id": "test-archive-001", "player": "O", "row": 1, "col": 0},
+        {"game_id": "test-archive-001", "player": "X", "row": 0, "col": 1},
+        {"game_id": "test-archive-001", "player": "O", "row": 1, "col": 1},
+        {"game_id": "test-archive-001", "player": "X", "row": 0, "col": 2}
+    ]
+}

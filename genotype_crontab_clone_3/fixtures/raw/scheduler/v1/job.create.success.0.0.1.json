@@ -1,0 +1,5 @@
+{
+  "name": "backup",
+  "command": "tar -czf /tmp/backup.tar.gz /data",
+  "cron_expression": "0 2 * * *"
+}

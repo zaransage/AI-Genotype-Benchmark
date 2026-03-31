@@ -1,0 +1,8 @@
+{
+  "game_id": "fixture-game-001",
+  "board": ["X", "X", "X", "O", "O", "", "", "", ""],
+  "moves": [0, 3, 1, 4, 2],
+  "winner": "X",
+  "status": "x_wins",
+  "completed_at": "2026-03-28T00:00:00+00:00"
+}

@@ -1,0 +1,15 @@
+[project]
+name = "genotype-crontab-clone-2"
+version = "0.1.0"
+requires-python = ">=3.12"
+
+[tool.black]
+exclude = '''
+/(
+    domain/scheduler/core/job\.py
+  | domain/scheduler/core/run_record\.py
+  | domain/scheduler/adaptors/rest_adaptor\.py
+  | domain/scheduler/adaptors/web_ui_adaptor\.py
+  | domain/scheduler/ports/sqlite_job_repository\.py
+)/
+'''

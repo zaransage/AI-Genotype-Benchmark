@@ -1,0 +1,20 @@
+[project]
+name = "genotype-ui-dashboard"
+version = "0.1.0"
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.34.0",
+    "httpx>=0.27.0",
+]
+
+[tool.black]
+# Aligned column formatting in data model and adaptor mapping files is intentional.
+# Do not let black collapse it.
+extend-exclude = '''
+(
+    /domain/core/models\.py
+  | /domain/core/adaptors/fastapi_router\.py
+  | /domain/core/adaptors/web_ui_router\.py
+)
+'''

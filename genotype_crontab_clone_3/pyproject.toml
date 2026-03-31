@@ -1,0 +1,22 @@
+[project]
+name = "genotype-crontab-clone-3"
+version = "1.0.0"
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.30.0",
+    "httpx>=0.27.0",
+]
+
+[tool.black]
+# Exclude aligned-column data model and adaptor mapping files per ADR-0006.
+# Intentional column alignment must not be collapsed by auto-formatters.
+extend-exclude = '''
+/(
+  domain/scheduler/core/job\.py
+  | domain/scheduler/core/job_run\.py
+  | domain/scheduler/core/adaptors/scheduler_routes\.py
+  | domain/scheduler/core/adaptors/ui_routes\.py
+  | domain/scheduler/core/ports/sqlite_job_repository\.py
+)/
+'''

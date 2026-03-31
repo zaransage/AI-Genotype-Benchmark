@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Metrics Dashboard</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, -apple-system, sans-serif; background: #f0f2f5; color: #1a1a2e; min-height: 100vh; }
+
+    header { background: #16213e; color: #e2e8f0; padding: 0.9rem 1.5rem; display: flex; align-items: center; gap: 1rem; }
+    header h1 { font-size: 1.25rem; font-weight: 600; flex: 1; }
+    header small { font-size: 0.75rem; opacity: 0.6; }
+
+    .layout { display: grid; grid-template-columns: 280px 1fr; height: calc(100vh - 48px); }
+
+    /* Sidebar */
+    .sidebar { background: #1e2a45; color: #cbd5e1; overflow-y: auto; display: flex; flex-direction: column; }
+    .sidebar h2 { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; padding: 1rem 1rem 0.5rem; color: #64748b; }
+    .dash-item { padding: 0.65rem 1rem; cursor: pointer; border-left: 3px solid transparent; transition: background 0.15s; display: flex; justify-content: space-between; align-items: center; }
+    .dash-item:hover { background: rgba(255,255,255,0.05); }
+    .dash-item.active { background: rgba(99,179,237,0.15); border-left-color: #63b3ed; color: #e2e8f0; }
+    .dash-item .badge { background: #2d3748; border-radius: 999px; font-size: 0.7rem; padding: 0.1rem 0.45rem; color: #90cdf4; }
+    .sidebar-footer { margin-top: auto; padding: 1rem; border-top: 1px solid #2d3748; }
+
+    /* Forms */
+    .form-row { display: flex; gap: 0.5rem; margin-top: 0.5rem; }
+    .form-row input { flex: 1; padding: 0.45rem 0.6rem; border: 1px solid #4a5568; border-radius: 6px; background: #2d3748; color: #e2e8f0; font-size: 0.85rem; outline: none; }
+    .form-row input:focus { border-color: #63b3ed; }
+    .form-row input::placeholder { color: #718096; }
+    .btn { padding: 0.45rem 0.9rem; border: none; border-radius: 6px; cursor: pointer; font-size: 0.82rem; font-weight: 500; transition: opacity 0.15s; white-space: nowrap; }
+    .btn:hover { opacity: 0.85; }
+    .btn-primary { background: #3182ce; color: #fff; }
+    .btn-sm { background: #2b6cb0; color: #fff; padding: 0.3rem 0.65rem; font-size: 0.78rem; }
+    .btn-post { background: #276749; color: #fff; }
+
+    /* Main content */
+    .content { overflow-y: auto; padding: 1.5rem; }
+    .placeholder { display: flex; align-items: center; justify-content: center; height: 60%; color: #718096; font-size: 0.95rem; }
+
+    .dash-header { margin-bottom: 1.5rem; }
+    .dash-header h2 { font-size: 1.4rem; font-weight: 700; color: #1a202c; }
+    .dash-header p { color: #718096; font-size: 0.9rem; margin-top: 0.25rem; }
+
+    /* Widget grid */
+    .widget-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1rem; margin-bottom: 1.5rem; }
+    .widget-card { background: #fff; border-radius: 10px; padding: 1rem 1.2rem; box-shadow: 0 1px 4px rgba(0,0,0,0.08); border: 1px solid #e2e8f0; cursor: pointer; transition: box-shadow 0.15s; }
+    .widget-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.12); }
+    .widget-card.selected { border-color: #3182ce; box-shadow: 0 0 0 2px #bee3f8; }
+    .widget-name { font-weight: 600; font-size: 0.9rem; color: #2d3748; }
+    .widget-unit { font-size: 0.75rem; color: #a0aec0; margin-top: 0.1rem; }
+    .widget-value { font-size: 2rem; font-weight: 700; color: #2b6cb0; margin: 0.5rem 0 0.25rem; line-height: 1; }
+    .widget-value.none { font-size: 1rem; color: #cbd5e1; }
+    .widget-ts { font-size: 0.7rem; color: #a0aec0; }
+
+    /* Widget action panel */
+    .widget-panel { background: #fff; border-radius: 10px; padding: 1.2rem; box-shadow: 0 1px 4px rgba(0,0,0,0.08); margin-bottom: 1.5rem; border: 1px solid #e2e8f0; }
+    .widget-panel h3 { font-size: 0.85rem; font-weight: 600; margin-bottom: 0.75rem; color: #4a5568; }
+    .history-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; margin-top: 0.5rem; }
+    .history-table th { text-align: left; padding: 0.35rem 0.5rem; color: #718096; border-bottom: 1px solid #e2e8f0; }
+    .history-table td { padding: 0.35rem 0.5rem; border-bottom: 1px solid #f7fafc; color: #2d3748; }
+    .history-table tr:last-child td { border-bottom: none; }
+    .no-values { color: #a0aec0; font-size: 0.82rem; padding: 0.5rem 0; }
+
+    /* Add widget row */
+    .section-title { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; color: #718096; margin-bottom: 0.5rem; font-weight: 600; }
+    .add-widget-row { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+    .add-widget-row input { padding: 0.4rem 0.6rem; border: 1px solid #e2e8f0; border-radius: 6px; font-size: 0.85rem; color: #2d3748; outline: none; background: #f7fafc; }
+    .add-widget-row input:focus { border-color: #63b3ed; background: #fff; }
+
+    /* Status toast */
+    #toast { position: fixed; bottom: 1.5rem; right: 1.5rem; background: #276749; color: #fff; padding: 0.6rem 1rem; border-radius: 8px; font-size: 0.85rem; opacity: 0; transition: opacity 0.3s; pointer-events: none; z-index: 999; }
+    #toast.show { opacity: 1; }
+
+    .spinner { display: inline-block; width: 14px; height: 14px; border: 2px solid #e2e8f0; border-top-color: #3182ce; border-radius: 50%; animation: spin 0.6s linear infinite; vertical-align: middle; margin-right: 6px; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Metrics Dashboard</h1>
+    <small id="last-refresh"></small>
+  </header>
+  <div class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Dashboards</h2>
+      <div id="dash-list"></div>
+      <div class="sidebar-footer">
+        <div class="section-title">New Dashboard</div>
+        <div class="form-row">
+          <input id="new-dash-name" placeholder="Name" />
+          <input id="new-dash-desc" placeholder="Description" style="flex:2" />
+        </div>
+        <div class="form-row" style="margin-top:0.5rem">
+          <button class="btn btn-primary" onclick="createDashboard()">Create</button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main content -->
+    <main class="content" id="content">
+      <div class="placeholder">Select a dashboard to view details.</div>
+    </main>
+  </div>
+
+  <div id="toast"></div>
+
+  <script>
+    let selectedDashId = null;
+    let selectedWidgetId = null;
+    let allDashboards = [];
+
+    // ------------------------------------------------------------------ API
+    async function api(method, path, body) {
+      const opts = { method, headers: { 'Content-Type': 'application/json' } };
+      if (body !== undefined) opts.body = JSON.stringify(body);
+      const res = await fetch(path, opts);
+      if (!res.ok) throw new Error(await res.text());
+      if (res.status === 204) return null;
+      return res.json();
+    }
+
+    // ------------------------------------------------------------------ Toast
+    function toast(msg, isError) {
+      const el = document.getElementById('toast');
+      el.textContent = msg;
+      el.style.background = isError ? '#9b2c2c' : '#276749';
+      el.classList.add('show');
+      setTimeout(() => el.classList.remove('show'), 2500);
+    }
+
+    // ------------------------------------------------------------------ Refresh
+    async function refresh() {
+      try {
+        allDashboards = await api('GET', '/dashboards');
+        renderSidebar();
+        if (selectedDashId) {
+          const dash = await api('GET', `/dashboards/${selectedDashId}`);
+          renderDetail(dash);
+        }
+        const el = document.getElementById('last-refresh');
+        el.textContent = 'Refreshed ' + new Date().toLocaleTimeString();
+      } catch (e) {
+        toast('Refresh failed: ' + e.message, true);
+      }
+    }
+
+    // ------------------------------------------------------------------ Sidebar
+    function renderSidebar() {
+      const list = document.getElementById('dash-list');
+      if (allDashboards.length === 0) {
+        list.innerHTML = '<div style="padding:0.75rem 1rem;font-size:0.82rem;color:#64748b">No dashboards yet.</div>';
+        return;
+      }
+      list.innerHTML = allDashboards.map(d => `
+        <div class="dash-item ${d.id === selectedDashId ? 'active' : ''}"
+             onclick="selectDashboard('${d.id}')">
+          <span>${escHtml(d.name)}</span>
+          <span class="badge">${d.widget_count}</span>
+        </div>
+      `).join('');
+    }
+
+    async function selectDashboard(id) {
+      selectedDashId = id;
+      selectedWidgetId = null;
+      renderSidebar();
+      document.getElementById('content').innerHTML = '<div class="placeholder"><span class="spinner"></span>Loading…</div>';
+      try {
+        const dash = await api('GET', `/dashboards/${id}`);
+        renderDetail(dash);
+      } catch (e) {
+        toast('Failed to load dashboard: ' + e.message, true);
+      }
+    }
+
+    // ------------------------------------------------------------------ Detail
+    function renderDetail(dash) {
+      const widgets = dash.widgets || [];
+      const widgetCards = widgets.map(w => {
+        const cv = w.current_value;
+        const valHtml = cv
+          ? `<div class="widget-value">${cv.value}<span style="font-size:0.9rem;font-weight:400;color:#718096;margin-left:4px">${escHtml(w.unit)}</span></div>
+             <div class="widget-ts">${new Date(cv.timestamp).toLocaleString()}</div>`
+          : `<div class="widget-value none">—</div><div class="widget-ts">no data</div>`;
+        return `
+          <div class="widget-card ${w.id === selectedWidgetId ? 'selected' : ''}"
+               onclick="selectWidget('${dash.id}', '${w.id}')">
+            <div class="widget-name">${escHtml(w.name)}</div>
+            <div class="widget-unit">${escHtml(w.unit) || '&nbsp;'}</div>
+            ${valHtml}
+          </div>`;
+      }).join('');
+
+      const widgetPanelHtml = selectedWidgetId
+        ? renderWidgetPanel(dash, selectedWidgetId)
+        : '';
+
+      document.getElementById('content').innerHTML = `
+        <div class="dash-header">
+          <h2>${escHtml(dash.name)}</h2>
+          ${dash.description ? `<p>${escHtml(dash.description)}</p>` : ''}
+        </div>
+
+        <div class="widget-grid" id="widget-grid">
+          ${widgetCards || '<div style="color:#a0aec0;font-size:0.9rem">No widgets yet.</div>'}
+        </div>
+
+        ${widgetPanelHtml}
+
+        <div style="margin-top:1rem">
+          <div class="section-title">Add Widget</div>
+          <div class="add-widget-row">
+            <input id="new-w-name" placeholder="Widget name" />
+            <input id="new-w-unit" placeholder="Unit (e.g. %, MB)" style="max-width:130px" />
+            <button class="btn btn-sm" onclick="addWidget('${dash.id}')">Add Widget</button>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderWidgetPanel(dash, widgetId) {
+      const widget = (dash.widgets || []).find(w => w.id === widgetId);
+      if (!widget) return '';
+      return `
+        <div class="widget-panel" id="widget-panel">
+          <h3>Widget: ${escHtml(widget.name)} ${widget.unit ? '(' + escHtml(widget.unit) + ')' : ''}</h3>
+          <div style="display:flex;gap:0.5rem;align-items:center;flex-wrap:wrap">
+            <input id="post-val" type="number" step="any" placeholder="Value" style="padding:0.4rem 0.6rem;border:1px solid #e2e8f0;border-radius:6px;font-size:0.85rem;width:130px;outline:none" />
+            <button class="btn btn-post" onclick="postValue('${dash.id}', '${widget.id}')">Post Value</button>
+          </div>
+          ${renderHistory(widget)}
+        </div>`;
+    }
+
+    function renderHistory(widget) {
+      const values = [...(widget.values || [])].reverse().slice(0, 20);
+      if (values.length === 0) return '<div class="no-values">No readings yet.</div>';
+      const rows = values.map(v =>
+        `<tr><td>${v.value}</td><td>${new Date(v.timestamp).toLocaleString()}</td></tr>`
+      ).join('');
+      return `
+        <table class="history-table">
+          <thead><tr><th>Value</th><th>Timestamp</th></tr></thead>
+          <tbody>${rows}</tbody>
+        </table>`;
+    }
+
+    async function selectWidget(dashId, widgetId) {
+      selectedWidgetId = widgetId;
+      try {
+        const dash = await api('GET', `/dashboards/${dashId}`);
+        renderDetail(dash);
+      } catch (e) {
+        toast('Failed to load widget: ' + e.message, true);
+      }
+    }
+
+    // ------------------------------------------------------------------ CRUD
+    async function createDashboard() {
+      const name = document.getElementById('new-dash-name').value.trim();
+      const description = document.getElementById('new-dash-desc').value.trim();
+      if (!name) { toast('Dashboard name is required', true); return; }
+      try {
+        const d = await api('POST', '/dashboards', { name, description });
+        document.getElementById('new-dash-name').value = '';
+        document.getElementById('new-dash-desc').value = '';
+        toast('Dashboard "' + d.name + '" created');
+        await refresh();
+        selectDashboard(d.id);
+      } catch (e) {
+        toast('Error: ' + e.message, true);
+      }
+    }
+
+    async function addWidget(dashId) {
+      const name = document.getElementById('new-w-name').value.trim();
+      const unit = document.getElementById('new-w-unit').value.trim();
+      if (!name) { toast('Widget name is required', true); return; }
+      try {
+        await api('POST', `/dashboards/${dashId}/widgets`, { name, unit });
+        document.getElementById('new-w-name').value = '';
+        document.getElementById('new-w-unit').value = '';
+        toast('Widget "' + name + '" added');
+        const dash = await api('GET', `/dashboards/${dashId}`);
+        renderDetail(dash);
+        await refresh();
+      } catch (e) {
+        toast('Error: ' + e.message, true);
+      }
+    }
+
+    async function postValue(dashId, widgetId) {
+      const raw = document.getElementById('post-val').value.trim();
+      if (raw === '') { toast('Enter a value', true); return; }
+      const value = parseFloat(raw);
+      if (isNaN(value)) { toast('Value must be a number', true); return; }
+      try {
+        await api('POST', `/dashboards/${dashId}/widgets/${widgetId}/values`, { value });
+        document.getElementById('post-val').value = '';
+        toast('Value posted');
+        const dash = await api('GET', `/dashboards/${dashId}`);
+        renderDetail(dash);
+        await refresh();
+      } catch (e) {
+        toast('Error: ' + e.message, true);
+      }
+    }
+
+    // ------------------------------------------------------------------ Utils
+    function escHtml(str) {
+      return String(str ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    }
+
+    // ------------------------------------------------------------------ Init
+    refresh();
+    setInterval(refresh, 30000);
+  </script>
+</body>
+</html>

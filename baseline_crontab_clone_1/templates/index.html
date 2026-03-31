@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Job Scheduler</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, sans-serif; background: #f4f6f8; color: #222; }
+    header { background: #1e3a5f; color: #fff; padding: 1rem 2rem; display: flex; align-items: center; gap: 1rem; }
+    header h1 { font-size: 1.4rem; flex: 1; }
+    button { cursor: pointer; border: none; border-radius: 4px; padding: 0.45rem 0.9rem; font-size: 0.85rem; }
+    .btn-primary { background: #2e6be6; color: #fff; }
+    .btn-primary:hover { background: #1a54c8; }
+    .btn-secondary { background: #e2e8f0; color: #333; }
+    .btn-secondary:hover { background: #cbd5e1; }
+    .btn-danger { background: #e53e3e; color: #fff; }
+    .btn-danger:hover { background: #c53030; }
+    main { max-width: 1100px; margin: 2rem auto; padding: 0 1rem; }
+    .toolbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
+    .toolbar h2 { font-size: 1.1rem; }
+    #status { font-size: 0.8rem; color: #666; margin-left: auto; margin-right: 0.75rem; }
+    table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 6px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,.1); }
+    thead { background: #eef2f7; }
+    th, td { padding: 0.65rem 0.85rem; text-align: left; font-size: 0.875rem; border-bottom: 1px solid #e2e8f0; }
+    th { font-weight: 600; white-space: nowrap; }
+    tr:last-child td { border-bottom: none; }
+    tr:hover { background: #f7faff; }
+    .badge { display: inline-block; padding: 0.2rem 0.5rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 600; }
+    .badge-green { background: #c6f6d5; color: #276749; }
+    .badge-red   { background: #fed7d7; color: #9b2c2c; }
+    .badge-gray  { background: #e2e8f0; color: #4a5568; }
+    .code { font-family: monospace; font-size: 0.82rem; background: #f1f5f9; padding: 0.1rem 0.35rem; border-radius: 3px; }
+    .history-row td { padding: 0; background: #f7faff; }
+    .history-panel { padding: 0.75rem 1rem; display: none; }
+    .history-panel.open { display: block; }
+    .history-panel h4 { margin-bottom: 0.5rem; font-size: 0.85rem; color: #555; }
+    .history-table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+    .history-table th, .history-table td { padding: 0.4rem 0.6rem; border-bottom: 1px solid #e2e8f0; text-align: left; }
+    .history-table thead { background: #e8edf3; }
+    .empty { color: #888; font-style: italic; font-size: 0.85rem; padding: 0.5rem 0; }
+    .run-stdout, .run-stderr { max-width: 260px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-family: monospace; font-size: 0.78rem; }
+    #no-jobs { text-align: center; padding: 2rem; color: #888; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Job Scheduler</h1>
+  </header>
+  <main>
+    <div class="toolbar">
+      <h2>Scheduled Jobs</h2>
+      <span id="status"></span>
+      <button class="btn-primary" onclick="loadJobs()">&#8635; Refresh</button>
+    </div>
+    <div id="jobs-container">
+      <p id="no-jobs">Loading&hellip;</p>
+    </div>
+  </main>
+
+  <script>
+    const BASE = '';
+
+    async function apiFetch(path, options) {
+      const resp = await fetch(BASE + path, options);
+      if (!resp.ok) {
+        const text = await resp.text();
+        throw new Error(`${resp.status}: ${text}`);
+      }
+      if (resp.status === 204) return null;
+      return resp.json();
+    }
+
+    function esc(str) {
+      return String(str ?? '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    }
+
+    function fmtDate(iso) {
+      if (!iso) return '—';
+      const d = new Date(iso.endsWith('Z') ? iso : iso + 'Z');
+      return d.toLocaleString();
+    }
+
+    function exitBadge(code) {
+      if (code === null || code === undefined) return '<span class="badge badge-gray">—</span>';
+      if (code === 0) return `<span class="badge badge-green">0</span>`;
+      return `<span class="badge badge-red">${esc(code)}</span>`;
+    }
+
+    async function loadHistory(jobId, panelEl, btnEl) {
+      const isOpen = panelEl.classList.contains('open');
+      if (isOpen) {
+        panelEl.classList.remove('open');
+        btnEl.textContent = 'History';
+        return;
+      }
+      btnEl.textContent = 'Loading…';
+      try {
+        const runs = await apiFetch(`/jobs/${jobId}/history`);
+        let html = '<h4>Run History</h4>';
+        if (runs.length === 0) {
+          html += '<p class="empty">No runs recorded yet.</p>';
+        } else {
+          html += `<table class="history-table">
+            <thead><tr>
+              <th>#</th><th>Started</th><th>Finished</th><th>Exit</th>
+              <th>Stdout</th><th>Stderr</th><th>Manual</th>
+            </tr></thead><tbody>`;
+          runs.forEach((r, i) => {
+            const manual = r.triggered_manually
+              ? '<span class="badge badge-green">yes</span>'
+              : '<span class="badge badge-gray">no</span>';
+            html += `<tr>
+              <td>${runs.length - i}</td>
+              <td>${fmtDate(r.started_at)}</td>
+              <td>${fmtDate(r.finished_at)}</td>
+              <td>${exitBadge(r.exit_code)}</td>
+              <td><span class="run-stdout" title="${esc(r.stdout)}">${esc(r.stdout)}</span></td>
+              <td><span class="run-stderr" title="${esc(r.stderr)}">${esc(r.stderr)}</span></td>
+              <td>${manual}</td>
+            </tr>`;
+          });
+          html += '</tbody></table>';
+        }
+        panelEl.innerHTML = html;
+        panelEl.classList.add('open');
+        btnEl.textContent = 'Hide History';
+      } catch (err) {
+        panelEl.innerHTML = `<p style="color:red">Error: ${esc(err.message)}</p>`;
+        panelEl.classList.add('open');
+        btnEl.textContent = 'History';
+      }
+    }
+
+    async function triggerJob(jobId, btnEl) {
+      btnEl.disabled = true;
+      btnEl.textContent = 'Running…';
+      try {
+        await apiFetch(`/jobs/${jobId}/trigger`, { method: 'POST' });
+        btnEl.textContent = 'Trigger';
+      } catch (err) {
+        alert('Trigger failed: ' + err.message);
+        btnEl.textContent = 'Trigger';
+      } finally {
+        btnEl.disabled = false;
+      }
+    }
+
+    async function deleteJob(jobId, name) {
+      if (!confirm(`Delete job "${name}"? This cannot be undone.`)) return;
+      try {
+        await apiFetch(`/jobs/${jobId}`, { method: 'DELETE' });
+        loadJobs();
+      } catch (err) {
+        alert('Delete failed: ' + err.message);
+      }
+    }
+
+    async function loadJobs() {
+      const container = document.getElementById('jobs-container');
+      const status = document.getElementById('status');
+      status.textContent = 'Refreshing…';
+      try {
+        const jobs = await apiFetch('/jobs');
+        if (jobs.length === 0) {
+          container.innerHTML = '<p id="no-jobs">No jobs scheduled. Use the API to create one.</p>';
+          status.textContent = `Last updated: ${new Date().toLocaleTimeString()}`;
+          return;
+        }
+        let html = `<table id="jobs-table">
+          <thead><tr>
+            <th>Name</th><th>Command</th><th>Schedule</th>
+            <th>Enabled</th><th>Created</th><th>Actions</th>
+          </tr></thead>
+          <tbody>`;
+        jobs.forEach(job => {
+          const enabled = job.enabled
+            ? '<span class="badge badge-green">enabled</span>'
+            : '<span class="badge badge-red">disabled</span>';
+          html += `<tr id="row-${esc(job.id)}">
+            <td>${esc(job.name)}</td>
+            <td><span class="code">${esc(job.command)}</span></td>
+            <td><span class="code">${esc(job.cron_expression)}</span></td>
+            <td>${enabled}</td>
+            <td>${fmtDate(job.created_at)}</td>
+            <td style="white-space:nowrap">
+              <button class="btn-secondary" id="hist-btn-${esc(job.id)}"
+                onclick="loadHistory('${esc(job.id)}',
+                  document.getElementById('hist-panel-${esc(job.id)}'),
+                  this)">History</button>
+              <button class="btn-primary" style="margin:0 .35rem"
+                onclick="triggerJob('${esc(job.id)}', this)">Trigger</button>
+              <button class="btn-danger"
+                onclick="deleteJob('${esc(job.id)}', '${esc(job.name)}')">Delete</button>
+            </td>
+          </tr>
+          <tr class="history-row">
+            <td colspan="6">
+              <div class="history-panel" id="hist-panel-${esc(job.id)}"></div>
+            </td>
+          </tr>`;
+        });
+        html += '</tbody></table>';
+        container.innerHTML = html;
+        status.textContent = `Last updated: ${new Date().toLocaleTimeString()} — ${jobs.length} job(s)`;
+      } catch (err) {
+        container.innerHTML = `<p style="color:red">Failed to load jobs: ${esc(err.message)}</p>`;
+        status.textContent = '';
+      }
+    }
+
+    loadJobs();
+  </script>
+</body>
+</html>

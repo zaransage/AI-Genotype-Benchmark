@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, sans-serif;
+      background: #f0f2f5;
+      color: #1a1a2e;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1rem;
+    }
+
+    h1 { font-size: 2rem; margin-bottom: 1.5rem; }
+
+    #status {
+      font-size: 1.25rem;
+      font-weight: 600;
+      height: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    #board {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-template-rows: repeat(3, 100px);
+      gap: 6px;
+    }
+
+    .cell {
+      background: #fff;
+      border: 2px solid #c0c4cc;
+      border-radius: 8px;
+      font-size: 2.5rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.15s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .cell:hover:not(.taken) { background: #e8eaf6; }
+    .cell.taken { cursor: default; }
+    .cell.x { color: #e53935; }
+    .cell.o { color: #1e88e5; }
+
+    #new-game {
+      margin-top: 1.5rem;
+      padding: 0.6rem 1.4rem;
+      font-size: 1rem;
+      font-weight: 600;
+      background: #3949ab;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+
+    #new-game:hover { background: #283593; }
+
+    #error { color: #c62828; margin-top: 0.75rem; min-height: 1.5rem; font-size: 0.9rem; }
+
+    h2 { margin-top: 2.5rem; margin-bottom: 0.75rem; font-size: 1.3rem; }
+
+    #history-table {
+      width: 100%;
+      max-width: 560px;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+
+    #history-table th, #history-table td {
+      border: 1px solid #c0c4cc;
+      padding: 0.4rem 0.6rem;
+      text-align: left;
+    }
+
+    #history-table th { background: #e8eaf6; font-weight: 600; }
+    #history-table tr:nth-child(even) td { background: #f8f9ff; }
+
+    #refresh-history {
+      margin-bottom: 0.5rem;
+      padding: 0.4rem 1rem;
+      font-size: 0.9rem;
+      background: #546e7a;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #refresh-history:hover { background: #37474f; }
+  </style>
+</head>
+<body>
+  <h1>Tic-Tac-Toe</h1>
+
+  <div id="status">Press "New Game" to start</div>
+
+  <div id="board">
+    <div class="cell" data-pos="0"></div>
+    <div class="cell" data-pos="1"></div>
+    <div class="cell" data-pos="2"></div>
+    <div class="cell" data-pos="3"></div>
+    <div class="cell" data-pos="4"></div>
+    <div class="cell" data-pos="5"></div>
+    <div class="cell" data-pos="6"></div>
+    <div class="cell" data-pos="7"></div>
+    <div class="cell" data-pos="8"></div>
+  </div>
+
+  <button id="new-game">New Game</button>
+  <div id="error"></div>
+
+  <h2>Completed Games</h2>
+  <button id="refresh-history">Refresh History</button>
+  <table id="history-table">
+    <thead>
+      <tr>
+        <th>Game ID</th>
+        <th>Outcome</th>
+        <th>Moves</th>
+        <th>Completed At</th>
+      </tr>
+    </thead>
+    <tbody id="history-body"></tbody>
+  </table>
+
+  <script>
+    let gameId = null;
+    let gameOver = false;
+
+    const statusEl = document.getElementById('status');
+    const errorEl  = document.getElementById('error');
+    const cells    = document.querySelectorAll('.cell');
+
+    function setStatus(state) {
+      errorEl.textContent = '';
+      if (!state) { statusEl.textContent = 'Press "New Game" to start'; return; }
+
+      const s = state.status;
+      if (s === 'in_progress') {
+        statusEl.textContent = `Player ${state.current_player}'s turn`;
+        gameOver = false;
+      } else {
+        gameOver = true;
+        if (s === 'draw')   statusEl.textContent = "It's a draw!";
+        else if (s === 'X_wins') statusEl.textContent = 'X wins!';
+        else                     statusEl.textContent = 'O wins!';
+        loadHistory();
+      }
+    }
+
+    function renderBoard(board) {
+      cells.forEach((cell, i) => {
+        const val = board[i];
+        cell.textContent = val ?? '';
+        cell.className = 'cell' + (val ? ' taken ' + val.toLowerCase() : '');
+      });
+    }
+
+    async function newGame() {
+      errorEl.textContent = '';
+      try {
+        const res = await fetch('/games', { method: 'POST' });
+        const data = await res.json();
+        gameId = data.id;
+        renderBoard(data.board);
+        setStatus(data);
+      } catch (e) {
+        errorEl.textContent = 'Failed to create game.';
+      }
+    }
+
+    async function makeMove(pos) {
+      if (!gameId || gameOver) return;
+      // determine whose turn it is from the board state (we trust current_player from server)
+      // we just send whatever the server says is current_player
+      // re-read current_player from status display
+      const currentPlayer = statusEl.textContent.startsWith('Player X') ? 'X' : 'O';
+      errorEl.textContent = '';
+      try {
+        const res = await fetch(`/games/${gameId}/moves`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ player: currentPlayer, position: pos }),
+        });
+        const data = await res.json();
+        if (!res.ok) {
+          errorEl.textContent = data.detail ?? 'Move failed.';
+          return;
+        }
+        renderBoard(data.board);
+        setStatus(data);
+      } catch (e) {
+        errorEl.textContent = 'Request failed.';
+      }
+    }
+
+    cells.forEach(cell => {
+      cell.addEventListener('click', () => {
+        if (!cell.textContent) {
+          makeMove(parseInt(cell.dataset.pos));
+        }
+      });
+    });
+
+    document.getElementById('new-game').addEventListener('click', newGame);
+
+    async function loadHistory() {
+      try {
+        const res = await fetch('/games/history');
+        const data = await res.json();
+        const tbody = document.getElementById('history-body');
+        tbody.innerHTML = '';
+        if (data.length === 0) {
+          const tr = document.createElement('tr');
+          tr.innerHTML = '<td colspan="4" style="text-align:center;color:#888">No completed games yet</td>';
+          tbody.appendChild(tr);
+          return;
+        }
+        data.forEach(game => {
+          const tr = document.createElement('tr');
+          const shortId = game.id.substring(0, 8) + '...';
+          const outcome = game.status === 'draw' ? 'Draw'
+                        : game.status === 'X_wins' ? 'X Wins'
+                        : 'O Wins';
+          const ts = game.created_at
+            ? new Date(game.created_at + 'Z').toLocaleString()
+            : '-';
+          tr.innerHTML = `<td title="${game.id}">${shortId}</td><td>${outcome}</td><td>${game.moves.length}</td><td>${ts}</td>`;
+          tbody.appendChild(tr);
+        });
+      } catch (e) {
+        // silently ignore history load errors
+      }
+    }
+
+    document.getElementById('refresh-history').addEventListener('click', loadHistory);
+    loadHistory();
+  </script>
+</body>
+</html>

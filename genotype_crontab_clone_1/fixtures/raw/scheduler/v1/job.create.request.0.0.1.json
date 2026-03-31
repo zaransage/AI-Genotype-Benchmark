@@ -1,0 +1,5 @@
+{
+  "name": "cleanup-logs",
+  "command": "find /var/log -name '*.log' -mtime +7 -delete",
+  "cron_expression": "0 2 * * *"
+}

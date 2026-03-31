@@ -1,0 +1,272 @@
+======================================================================
+Genotype Benchmark  started: 2026-03-27T23:01:17-04:00
+Services: tic_tac_toe crontab_clone ui_dashboard
+Runs per service: 3
+Results file: results_20260327_230117.log
+======================================================================
+
+────────────────────────────────────────────────────────────────
+BASELINE  service=tic_tac_toe  run=1  phase=1_build
+dir=./baseline_tic_tac_toe_1  started=2026-03-27T23:01:17-04:00
+{"type":"result","subtype":"success","is_error":false,"duration_ms":74459,"duration_api_ms":63134,"num_turns":12,"result":"REPORT\n  start_time: 2026-03-28T03:01:25Z\n  end_time:   2026-03-28T03:02:25Z\n  duration_s: 60\n  files_created: 5\n  python_loc: 191\nEND_REPORT","stop_reason":"end_turn","session_id":"7c5f9a96-454a-4ffb-b3d4-cd6467d9cba5","total_cost_usd":0.16494239999999996,"usage":{"input_tokens":14,"cache_creation_input_tokens":9672,"cache_read_input_tokens":212268,"output_tokens":4330,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":9672,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":{"claude-sonnet-4-6":{"inputTokens":14,"outputTokens":4330,"cacheReadInputTokens":212268,"cacheCreationInputTokens":9672,"webSearchRequests":0,"costUSD":0.16494239999999996,"contextWindow":200000,"maxOutputTokens":32000}},"permission_denials":[],"fast_mode_state":"off","uuid":"dea1cf67-0d00-438e-91b1-5b7206f7621c"}
+  wall_clock=76s  tokens=unavailable(jq missing)
+BASELINE  service=tic_tac_toe  run=1  phase=3_measure_initial
+  [baseline_initial] files=12  size=76K  loc=262  test_files=1  test_cases=16
+BASELINE  service=tic_tac_toe  run=1  phase=4_expand
+  started=2026-03-27T23:02:33-04:00
+{"type":"result","subtype":"success","is_error":false,"duration_ms":205365,"duration_api_ms":203989,"num_turns":16,"result":"REPORT\n  start_time:      2026-03-28T03:04:30Z\n  end_time:        2026-03-28T03:05:56Z\n  duration_s:      86\n  files_added:     5\n  files_modified:  1\n  loc_added:       336\nEND_REPORT","stop_reason":"end_turn","session_id":"6dfd5219-92c7-4b53-bebc-72f6cc5d5d23","total_cost_usd":0.40817235,"usage":{"input_tokens":15,"cache_creation_input_tokens":23927,"cache_read_input_tokens":343537,"output_tokens":14356,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":23927,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":{"claude-sonnet-4-6":{"inputTokens":15,"outputTokens":14356,"cacheReadInputTokens":343537,"cacheCreationInputTokens":23927,"webSearchRequests":0,"costUSD":0.40817235,"contextWindow":200000,"maxOutputTokens":32000}},"permission_denials":[],"fast_mode_state":"off","uuid":"c13b4cbb-b831-449b-a5da-7c013aa94ede"}
+  wall_clock=206s  tokens=unavailable(jq missing)
+BASELINE  service=tic_tac_toe  run=1  phase=6_measure_final
+  [baseline_final] files=19  size=124K  loc=518  test_files=2  test_cases=29
+
+────────────────────────────────────────────────────────────────
+GENOTYPE  service=tic_tac_toe  run=1  phase=2_build
+dir=./genotype_tic_tac_toe_1  started=2026-03-27T23:05:59-04:00
+{"type":"result","subtype":"success","is_error":false,"duration_ms":345456,"duration_api_ms":344983,"num_turns":55,"result":"REPORT\n  start_time: 2026-03-28T03:07:41Z\n  end_time:   2026-03-28T03:11:39Z\n  duration_s: 238\n  files_created: 27\n  python_loc: 1010\nEND_REPORT","stop_reason":"end_turn","session_id":"b414cb27-fb0e-472d-a169-9b6eebe39320","total_cost_usd":0.9317712,"usage":{"input_tokens":32,"cache_creation_input_tokens":46126,"cache_read_input_tokens":1137959,"output_tokens":27821,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":46126,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":{"claude-sonnet-4-6":{"inputTokens":32,"outputTokens":27821,"cacheReadInputTokens":1137959,"cacheCreationInputTokens":46126,"webSearchRequests":0,"costUSD":0.9317712,"contextWindow":200000,"maxOutputTokens":32000}},"permission_denials":[],"fast_mode_state":"off","uuid":"f39a67f4-3174-4d52-bd0b-67786b7c4133"}
+  wall_clock=347s  tokens=unavailable(jq missing)
+GENOTYPE  service=tic_tac_toe  run=1  phase=3_measure_initial
+  [genotype_initial] files=27  size=164K  loc=1010  test_files=3  test_cases=56
+GENOTYPE  service=tic_tac_toe  run=1  phase=5_expand
+  started=2026-03-27T23:11:46-04:00
+{"type":"result","subtype":"success","is_error":false,"duration_ms":608874,"duration_api_ms":595923,"num_turns":54,"result":"REPORT\n  start_time:      2026-03-28T03:15:35Z\n  end_time:        2026-03-28T03:21:51Z\n  duration_s:      376\n  files_added:     8\n  files_modified:  6\n  loc_added:       553\nEND_REPORT","stop_reason":"end_turn","session_id":"5180c4e2-774a-426c-bf4e-d137e21366c9","total_cost_usd":1.69683865,"usage":{"input_tokens":52,"cache_creation_input_tokens":65807,"cache_read_input_tokens":2638867,"output_tokens":36842,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":65807,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":{"claude-sonnet-4-6":{"inputTokens":52,"outputTokens":36842,"cacheReadInputTokens":2638867,"cacheCreationInputTokens":65807,"webSearchRequests":0,"costUSD":1.59122235,"contextWindow":200000,"maxOutputTokens":32000},"claude-haiku-4-5-20251001":{"inputTokens":41,"outputTokens":8652,"cacheReadInputTokens":163603,"cacheCreationInputTokens":36764,"webSearchRequests":0,"costUSD":0.1056163,"contextWindow":200000,"maxOutputTokens":32000}},"permission_denials":[],"fast_mode_state":"off","uuid":"20cf7a6c-8c60-496f-a47f-070db31c76c0"}
+  wall_clock=610s  tokens=unavailable(jq missing)
+GENOTYPE  service=tic_tac_toe  run=1  phase=6_measure_final
+  [genotype_final] files=55  size=372K  loc=1669  test_files=5  test_cases=89
+DONE  service=tic_tac_toe  run=1  finished=2026-03-27T23:21:56-04:00
+
+────────────────────────────────────────────────────────────────
+BASELINE  service=tic_tac_toe  run=2  phase=1_build
+dir=./baseline_tic_tac_toe_2  started=2026-03-27T23:21:56-04:00
+{"type":"result","subtype":"success","is_error":false,"duration_ms":52683,"duration_api_ms":51023,"num_turns":9,"result":"All 20 tests pass.\n\nREPORT\n  start_time: 2026-03-27T00:00:00\n  end_time:   2026-03-27T00:01:45\n  duration_s: 105\n  files_created: 5\n  python_loc: 149\nEND_REPORT","stop_reason":"end_turn","session_id":"69d6672b-30d6-4b80-aa22-f8981879b9c3","total_cost_usd":0.14396625,"usage":{"input_tokens":11,"cache_creation_input_tokens":9271,"cache_read_input_tokens":156940,"output_tokens":4139,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":9271,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":{"claude-sonnet-4-6":{"inputTokens":11,"outputTokens":4139,"cacheReadInputTokens":156940,"cacheCreationInputTokens":9271,"webSearchRequests":0,"costUSD":0.14396625,"contextWindow":200000,"maxOutputTokens":32000}},"permission_denials":[],"fast_mode_state":"off","uuid":"54445c2f-e549-4894-a03f-1667cee21684"}
+  wall_clock=59s  tokens=unavailable(jq missing)
+BASELINE  service=tic_tac_toe  run=2  phase=3_measure_initial
+  [baseline_initial] files=12  size=80K  loc=276  test_files=1  test_cases=20
+BASELINE  service=tic_tac_toe  run=2  phase=4_expand
+  started=2026-03-27T23:22:55-04:00
+{"type":"result","subtype":"success","is_error":false,"duration_ms":282457,"duration_api_ms":279711,"num_turns":18,"result":"39/39 tests pass. All files are written.\n\nREPORT\n  start_time:      2026-03-27T00:00:00Z\n  end_time:        2026-03-27T00:02:15Z\n  duration_s:      135\n  files_added:     3\n  files_modified:  3\n  loc_added:       337\nEND_REPORT","stop_reason":"end_turn","session_id":"888b126f-1920-4440-ad78-fe69d96ad4c2","total_cost_usd":0.48237585000000005,"usage":{"input_tokens":17,"cache_creation_input_tokens":29597,"cache_read_input_tokens":415737,"output_tokens":16441,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":29597,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":{"claude-sonnet-4-6":{"inputTokens":17,"outputTokens":16441,"cacheReadInputTokens":415737,"cacheCreationInputTokens":29597,"webSearchRequests":0,"costUSD":0.48237585000000005,"contextWindow":200000,"maxOutputTokens":32000}},"permission_denials":[],"fast_mode_state":"off","uuid":"ddd68e0c-d012-4205-bb3b-51ed3d90e0bd"}
+  wall_clock=284s  tokens=unavailable(jq missing)
+BASELINE  service=tic_tac_toe  run=2  phase=6_measure_final
+  [baseline_final] files=18  size=152K  loc=747  test_files=2  test_cases=39
+
+────────────────────────────────────────────────────────────────
+GENOTYPE  service=tic_tac_toe  run=2  phase=2_build
+dir=./genotype_tic_tac_toe_2  started=2026-03-27T23:27:39-04:00
+{"type":"result","subtype":"success","is_error":false,"duration_ms":353915,"duration_api_ms":352057,"num_turns":57,"result":"REPORT\n  start_time: 2026-03-28T03:29:16Z\n  end_time:   2026-03-28T03:33:24Z\n  duration_s: 248\n  files_created: 25\n  python_loc: 583\nEND_REPORT","stop_reason":"end_turn","session_id":"ad73f972-59b8-496a-babe-967174e85aba","total_cost_usd":1.0234487999999997,"usage":{"input_tokens":44,"cache_creation_input_tokens":45180,"cache_read_input_tokens":1625606,"output_tokens":24414,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":45180,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":{"claude-sonnet-4-6":{"inputTokens":44,"outputTokens":24414,"cacheReadInputTokens":1625606,"cacheCreationInputTokens":45180,"webSearchRequests":0,"costUSD":1.0234487999999997,"contextWindow":200000,"maxOutputTokens":32000}},"permission_denials":[],"fast_mode_state":"off","uuid":"2cca630c-a4c9-47d7-9391-7fea983ea1d5"}
+  wall_clock=355s  tokens=unavailable(jq missing)
+GENOTYPE  service=tic_tac_toe  run=2  phase=3_measure_initial
+  [genotype_initial] files=40  size=240K  loc=717  test_files=3  test_cases=41
+GENOTYPE  service=tic_tac_toe  run=2  phase=5_expand
+  started=2026-03-27T23:33:34-04:00
+{"type":"result","subtype":"success","is_error":false,"duration_ms":412225,"duration_api_ms":396570,"num_turns":39,"result":"REPORT\n  start_time:      2026-03-28T03:36:52Z\n  end_time:        2026-03-28T03:40:16Z\n  duration_s:      204\n  files_added:     9\n  files_modified:  3\n  loc_added:       727\nEND_REPORT","stop_reason":"end_turn","session_id":"f7f9114d-4698-4828-bd0c-1147bbd3b2c1","total_cost_usd":1.1064675500000003,"usage":{"input_tokens":34,"cache_creation_input_tokens":53027,"cache_read_input_tokens":1470522,"output_tokens":25147,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":53027,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":{"claude-sonnet-4-6":{"inputTokens":34,"outputTokens":25147,"cacheReadInputTokens":1470522,"cacheCreationInputTokens":53027,"webSearchRequests":0,"costUSD":1.0173148500000002,"contextWindow":200000,"maxOutputTokens":32000},"claude-haiku-4-5-20251001":{"inputTokens":38,"outputTokens":4309,"cacheReadInputTokens":111997,"cacheCreationInputTokens":45096,"webSearchRequests":0,"costUSD":0.0891527,"contextWindow":200000,"maxOutputTokens":32000}},"permission_denials":[],"fast_mode_state":"off","uuid":"50103440-4853-44b3-b2b4-fd548f3230f3"}
+  wall_clock=413s  tokens=unavailable(jq missing)
+GENOTYPE  service=tic_tac_toe  run=2  phase=6_measure_final
+  [genotype_final] files=1009  size=39M  loc=173195  test_files=6  test_cases=79
+DONE  service=tic_tac_toe  run=2  finished=2026-03-27T23:40:27-04:00
+
+────────────────────────────────────────────────────────────────
+BASELINE  service=tic_tac_toe  run=3  phase=1_build
+dir=./baseline_tic_tac_toe_3  started=2026-03-27T23:40:27-04:00
+{"type":"result","subtype":"success","is_error":false,"duration_ms":69097,"duration_api_ms":67243,"num_turns":10,"result":"25/25 tests passing.\n\nREPORT\n  start_time: 2026-03-28T03:40:35Z\n  end_time:   2026-03-28T03:41:34Z\n  duration_s: 59\n  files_created: 4\n  python_loc: 120\nEND_REPORT","stop_reason":"end_turn","session_id":"6f89ef7a-92cf-4f8c-9dcd-c9bc99ab1e31","total_cost_usd":0.15750375000000003,"usage":{"input_tokens":12,"cache_creation_input_tokens":10473,"cache_read_input_tokens":176130,"output_tokens":4357,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":10473,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":{"claude-sonnet-4-6":{"inputTokens":12,"outputTokens":4357,"cacheReadInputTokens":176130,"cacheCreationInputTokens":10473,"webSearchRequests":0,"costUSD":0.15750375000000003,"contextWindow":200000,"maxOutputTokens":32000}},"permission_denials":[],"fast_mode_state":"off","uuid":"93bd2f60-de93-4bcd-aca4-b8015eb2d4d7"}
+  wall_clock=71s  tokens=unavailable(jq missing)
+BASELINE  service=tic_tac_toe  run=3  phase=3_measure_initial
+  [baseline_initial] files=10  size=72K  loc=276  test_files=1  test_cases=18
+BASELINE  service=tic_tac_toe  run=3  phase=4_expand
+  started=2026-03-27T23:41:38-04:00
+{"type":"result","subtype":"success","is_error":false,"duration_ms":106615,"duration_api_ms":105194,"num_turns":9,"result":"All 40 tests pass (25 original + 15 new). No changes to `requirements.txt` needed — `sqlite3` is part of Python's standard library.\n\nREPORT\n  start_time:      2026-03-27T00:00:00Z\n  end_time:        2026-03-27T00:05:00Z\n  duration_s:      300\n  files_added:     1\n  files_modified:  2\n  loc_added:       286\nEND_REPORT","stop_reason":"end_turn","session_id":"897eedfa-88ff-4313-b916-a01f4fd126dc","total_cost_usd":0.2243169,"usage":{"input_tokens":9,"cache_creation_input_tokens":17238,"cache_read_input_tokens":142108,"output_tokens":7801,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":17238,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":{"claude-sonnet-4-6":{"inputTokens":9,"outputTokens":7801,"cacheReadInputTokens":142108,"cacheCreationInputTokens":17238,"webSearchRequests":0,"costUSD":0.2243169,"contextWindow":200000,"maxOutputTokens":32000}},"permission_denials":[],"fast_mode_state":"off","uuid":"4fd36d60-215d-4ea7-9de0-3a6f9e6a7358"}
+  wall_clock=108s  tokens=unavailable(jq missing)
+BASELINE  service=tic_tac_toe  run=3  phase=6_measure_final
+  [baseline_final] files=13  size=120K  loc=686  test_files=2  test_cases=33
+
+────────────────────────────────────────────────────────────────
+GENOTYPE  service=tic_tac_toe  run=3  phase=2_build
+dir=./genotype_tic_tac_toe_3  started=2026-03-27T23:43:26-04:00
+{"type":"result","subtype":"success","is_error":false,"duration_ms":294919,"duration_api_ms":293880,"num_turns":44,"result":"REPORT\n  start_time: 2026-03-28T03:44:41Z\n  end_time:   2026-03-28T03:48:09Z\n  duration_s: 208\n  files_created: 24\n  python_loc: 870\nEND_REPORT","stop_reason":"end_turn","session_id":"5ae2a981-fdb6-4dcb-ba85-a4971a67be4a","total_cost_usd":0.7576067999999998,"usage":{"input_tokens":28,"cache_creation_input_tokens":40564,"cache_read_input_tokens":918926,"output_tokens":21982,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":40564,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":{"claude-sonnet-4-6":{"inputTokens":28,"outputTokens":21982,"cacheReadInputTokens":918926,"cacheCreationInputTokens":40564,"webSearchRequests":0,"costUSD":0.7576067999999998,"contextWindow":200000,"maxOutputTokens":32000}},"permission_denials":[],"fast_mode_state":"off","uuid":"19928b55-9aa1-4eeb-8093-e1cc29e29268"}
+  wall_clock=296s  tokens=unavailable(jq missing)
+GENOTYPE  service=tic_tac_toe  run=3  phase=3_measure_initial
+  [genotype_initial] files=734  size=35M  loc=156574  test_files=4  test_cases=38
+GENOTYPE  service=tic_tac_toe  run=3  phase=5_expand
+  started=2026-03-27T23:48:22-04:00
+{"type":"result","subtype":"success","is_error":false,"duration_ms":408582,"duration_api_ms":406067,"num_turns":33,"result":"REPORT\n  start_time:      2026-03-28T03:51:39Z\n  end_time:        2026-03-28T03:54:45Z\n  duration_s:      186\n  files_added:     8\n  files_modified:  4\n  loc_added:       654\nEND_REPORT","stop_reason":"end_turn","session_id":"f8d5c403-6ea4-47c7-ab3d-3d851861a297","total_cost_usd":1.0207239000000001,"usage":{"input_tokens":32,"cache_creation_input_tokens":45459,"cache_read_input_tokens":1234919,"output_tokens":25187,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":45459,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":{"claude-sonnet-4-6":{"inputTokens":32,"outputTokens":25187,"cacheReadInputTokens":1234919,"cacheCreationInputTokens":45459,"webSearchRequests":0,"costUSD":0.9188479500000001,"contextWindow":200000,"maxOutputTokens":32000},"claude-haiku-4-5-20251001":{"inputTokens":64,"outputTokens":5311,"cacheReadInputTokens":257107,"cacheCreationInputTokens":39637,"webSearchRequests":0,"costUSD":0.10187594999999999,"contextWindow":200000,"maxOutputTokens":32000}},"permission_denials":[],"fast_mode_state":"off","uuid":"e50caae4-e39a-4800-af2b-60a0a4c514bf"}
+  wall_clock=410s  tokens=unavailable(jq missing)
+GENOTYPE  service=tic_tac_toe  run=3  phase=6_measure_final
+  [genotype_final] files=990  size=39M  loc=173096  test_files=6  test_cases=63
+DONE  service=tic_tac_toe  run=3  finished=2026-03-27T23:55:12-04:00
+
+────────────────────────────────────────────────────────────────
+BASELINE  service=crontab_clone  run=1  phase=1_build
+dir=./baseline_crontab_clone_1  started=2026-03-27T23:55:12-04:00
+{"type":"result","subtype":"success","is_error":true,"duration_ms":104273,"duration_api_ms":103462,"num_turns":7,"result":"You've hit your limit · resets 3am (America/New_York)","stop_reason":"stop_sequence","session_id":"8897afb7-9637-4e99-b483-bafb33d6946d","total_cost_usd":0.19993935,"usage":{"input_tokens":8,"cache_creation_input_tokens":11657,"cache_read_input_tokens":110622,"output_tokens":8201,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":11657,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":{"claude-sonnet-4-6":{"inputTokens":8,"outputTokens":8201,"cacheReadInputTokens":110622,"cacheCreationInputTokens":11657,"webSearchRequests":0,"costUSD":0.19993935,"contextWindow":200000,"maxOutputTokens":32000}},"permission_denials":[],"fast_mode_state":"off","uuid":"7047cd6c-6aec-45cb-853b-3d3beb05a450"}
+  wall_clock=110s  tokens=unavailable(jq missing)
+BASELINE  service=crontab_clone  run=1  phase=3_measure_initial
+  [baseline_initial] files=5  size=24K  loc=312  test_files=0  test_cases=0
+BASELINE  service=crontab_clone  run=1  phase=4_expand
+  started=2026-03-27T23:57:02-04:00
+{"type":"result","subtype":"success","is_error":true,"duration_ms":441,"duration_api_ms":0,"num_turns":1,"result":"You've hit your limit · resets 3am (America/New_York)","stop_reason":"stop_sequence","session_id":"6b6d9103-9c69-4930-ba3f-b890067eb8c0","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":{},"permission_denials":[],"fast_mode_state":"off","uuid":"dbfe7e38-a1ab-4494-8470-b85e397343c0"}
+  wall_clock=2s  tokens=unavailable(jq missing)
+BASELINE  service=crontab_clone  run=1  phase=6_measure_final
+  [baseline_final] files=5  size=24K  loc=312  test_files=0  test_cases=0
+
+────────────────────────────────────────────────────────────────
+GENOTYPE  service=crontab_clone  run=1  phase=2_build
+dir=./genotype_crontab_clone_1  started=2026-03-27T23:57:04-04:00
+{"type":"result","subtype":"success","is_error":true,"duration_ms":403,"duration_api_ms":0,"num_turns":1,"result":"You've hit your limit · resets 3am (America/New_York)","stop_reason":"stop_sequence","session_id":"1df89cf3-1fee-43c0-98cf-f619a9e62c10","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":{},"permission_denials":[],"fast_mode_state":"off","uuid":"bc905841-a198-43ce-878d-e81da9c0b303"}
+  wall_clock=1s  tokens=unavailable(jq missing)
+GENOTYPE  service=crontab_clone  run=1  phase=3_measure_initial
+  [genotype_initial] files=0  size=4.0K  loc=0  test_files=0  test_cases=0
+GENOTYPE  service=crontab_clone  run=1  phase=5_expand
+  started=2026-03-27T23:57:05-04:00
+{"type":"result","subtype":"success","is_error":true,"duration_ms":293,"duration_api_ms":0,"num_turns":1,"result":"You've hit your limit · resets 3am (America/New_York)","stop_reason":"stop_sequence","session_id":"20067894-3d4b-4254-9c39-d9324cd2008f","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":{},"permission_denials":[],"fast_mode_state":"off","uuid":"ff39513b-5e3c-44c1-8bf9-9b2d4744c620"}
+  wall_clock=2s  tokens=unavailable(jq missing)
+GENOTYPE  service=crontab_clone  run=1  phase=6_measure_final
+  [genotype_final] files=0  size=4.0K  loc=0  test_files=0  test_cases=0
+DONE  service=crontab_clone  run=1  finished=2026-03-27T23:57:07-04:00
+
+────────────────────────────────────────────────────────────────
+BASELINE  service=crontab_clone  run=2  phase=1_build
+dir=./baseline_crontab_clone_2  started=2026-03-27T23:57:07-04:00
+{"type":"result","subtype":"success","is_error":true,"duration_ms":278,"duration_api_ms":0,"num_turns":1,"result":"You've hit your limit · resets 3am (America/New_York)","stop_reason":"stop_sequence","session_id":"64a8ce43-e0bb-4d8e-8a51-f7a876cdfde3","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":{},"permission_denials":[],"fast_mode_state":"off","uuid":"a9f8d39b-8f53-46dd-8fc6-131ed5353db8"}
+  wall_clock=1s  tokens=unavailable(jq missing)
+BASELINE  service=crontab_clone  run=2  phase=3_measure_initial
+  [baseline_initial] files=0  size=4.0K  loc=0  test_files=0  test_cases=0
+BASELINE  service=crontab_clone  run=2  phase=4_expand
+  started=2026-03-27T23:57:08-04:00
+{"type":"result","subtype":"success","is_error":true,"duration_ms":263,"duration_api_ms":0,"num_turns":1,"result":"You've hit your limit · resets 3am (America/New_York)","stop_reason":"stop_sequence","session_id":"225b4c66-296d-4145-9c2a-03715e9303ab","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":{},"permission_denials":[],"fast_mode_state":"off","uuid":"85ceafa2-b155-4a66-83d7-0e4c8dc1e360"}
+  wall_clock=2s  tokens=unavailable(jq missing)
+BASELINE  service=crontab_clone  run=2  phase=6_measure_final
+  [baseline_final] files=0  size=4.0K  loc=0  test_files=0  test_cases=0
+
+────────────────────────────────────────────────────────────────
+GENOTYPE  service=crontab_clone  run=2  phase=2_build
+dir=./genotype_crontab_clone_2  started=2026-03-27T23:57:10-04:00
+{"type":"result","subtype":"success","is_error":true,"duration_ms":278,"duration_api_ms":0,"num_turns":1,"result":"You've hit your limit · resets 3am (America/New_York)","stop_reason":"stop_sequence","session_id":"4f91e0ab-d951-46df-8346-f0f52c82e176","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":{},"permission_denials":[],"fast_mode_state":"off","uuid":"5cc3c515-4aa9-41d5-bdcb-dbc19c4e1b10"}
+  wall_clock=1s  tokens=unavailable(jq missing)
+GENOTYPE  service=crontab_clone  run=2  phase=3_measure_initial
+  [genotype_initial] files=0  size=4.0K  loc=0  test_files=0  test_cases=0
+GENOTYPE  service=crontab_clone  run=2  phase=5_expand
+  started=2026-03-27T23:57:11-04:00
+{"type":"result","subtype":"success","is_error":true,"duration_ms":292,"duration_api_ms":0,"num_turns":1,"result":"You've hit your limit · resets 3am (America/New_York)","stop_reason":"stop_sequence","session_id":"d0d41c39-545d-4a39-a0d3-6128728e9bd0","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":{},"permission_denials":[],"fast_mode_state":"off","uuid":"fd27fe88-4c29-4c62-99bc-915e0ca7e980"}
+  wall_clock=2s  tokens=unavailable(jq missing)
+GENOTYPE  service=crontab_clone  run=2  phase=6_measure_final
+  [genotype_final] files=0  size=4.0K  loc=0  test_files=0  test_cases=0
+DONE  service=crontab_clone  run=2  finished=2026-03-27T23:57:13-04:00
+
+────────────────────────────────────────────────────────────────
+BASELINE  service=crontab_clone  run=3  phase=1_build
+dir=./baseline_crontab_clone_3  started=2026-03-27T23:57:13-04:00
+{"type":"result","subtype":"success","is_error":true,"duration_ms":267,"duration_api_ms":0,"num_turns":1,"result":"You've hit your limit · resets 3am (America/New_York)","stop_reason":"stop_sequence","session_id":"58847089-fd97-4f5f-9776-64a865b25674","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":{},"permission_denials":[],"fast_mode_state":"off","uuid":"bcd124e4-bcff-4b2f-8d29-e86b04b9a432"}
+  wall_clock=1s  tokens=unavailable(jq missing)
+BASELINE  service=crontab_clone  run=3  phase=3_measure_initial
+  [baseline_initial] files=0  size=4.0K  loc=0  test_files=0  test_cases=0
+BASELINE  service=crontab_clone  run=3  phase=4_expand
+  started=2026-03-27T23:57:14-04:00
+{"type":"result","subtype":"success","is_error":true,"duration_ms":355,"duration_api_ms":0,"num_turns":1,"result":"You've hit your limit · resets 3am (America/New_York)","stop_reason":"stop_sequence","session_id":"f85aeed1-406e-491d-a33b-998f6cd445f1","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":{},"permission_denials":[],"fast_mode_state":"off","uuid":"a371ed89-495a-4a88-9326-38da839beffe"}
+  wall_clock=2s  tokens=unavailable(jq missing)
+BASELINE  service=crontab_clone  run=3  phase=6_measure_final
+  [baseline_final] files=0  size=4.0K  loc=0  test_files=0  test_cases=0
+
+────────────────────────────────────────────────────────────────
+GENOTYPE  service=crontab_clone  run=3  phase=2_build
+dir=./genotype_crontab_clone_3  started=2026-03-27T23:57:16-04:00
+{"type":"result","subtype":"success","is_error":true,"duration_ms":452,"duration_api_ms":0,"num_turns":1,"result":"You've hit your limit · resets 3am (America/New_York)","stop_reason":"stop_sequence","session_id":"7516165f-d5be-44b1-a64c-228899c62983","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":{},"permission_denials":[],"fast_mode_state":"off","uuid":"a5214309-9f5c-4726-ac2a-f4476ffb24c3"}
+  wall_clock=1s  tokens=unavailable(jq missing)
+GENOTYPE  service=crontab_clone  run=3  phase=3_measure_initial
+  [genotype_initial] files=0  size=4.0K  loc=0  test_files=0  test_cases=0
+GENOTYPE  service=crontab_clone  run=3  phase=5_expand
+  started=2026-03-27T23:57:17-04:00
+{"type":"result","subtype":"success","is_error":true,"duration_ms":313,"duration_api_ms":0,"num_turns":1,"result":"You've hit your limit · resets 3am (America/New_York)","stop_reason":"stop_sequence","session_id":"6a4dd302-508c-4c49-86a1-fb3604e83569","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":{},"permission_denials":[],"fast_mode_state":"off","uuid":"5381157d-9d0b-4022-8d4e-e4fde08a7d64"}
+  wall_clock=2s  tokens=unavailable(jq missing)
+GENOTYPE  service=crontab_clone  run=3  phase=6_measure_final
+  [genotype_final] files=0  size=4.0K  loc=0  test_files=0  test_cases=0
+DONE  service=crontab_clone  run=3  finished=2026-03-27T23:57:19-04:00
+
+────────────────────────────────────────────────────────────────
+BASELINE  service=ui_dashboard  run=1  phase=1_build
+dir=./baseline_ui_dashboard_1  started=2026-03-27T23:57:19-04:00
+{"type":"result","subtype":"success","is_error":true,"duration_ms":322,"duration_api_ms":0,"num_turns":1,"result":"You've hit your limit · resets 3am (America/New_York)","stop_reason":"stop_sequence","session_id":"0dc2721f-7835-4448-b368-87f1be57dc99","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":{},"permission_denials":[],"fast_mode_state":"off","uuid":"f1cf6a4d-d009-4a8e-9cb9-e5163a3e3250"}
+  wall_clock=1s  tokens=unavailable(jq missing)
+BASELINE  service=ui_dashboard  run=1  phase=3_measure_initial
+  [baseline_initial] files=0  size=4.0K  loc=0  test_files=0  test_cases=0
+BASELINE  service=ui_dashboard  run=1  phase=4_expand
+  started=2026-03-27T23:57:20-04:00
+{"type":"result","subtype":"success","is_error":true,"duration_ms":275,"duration_api_ms":0,"num_turns":1,"result":"You've hit your limit · resets 3am (America/New_York)","stop_reason":"stop_sequence","session_id":"7e23516e-5bb4-4b69-b20e-85f389473b4e","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":{},"permission_denials":[],"fast_mode_state":"off","uuid":"f575732d-2a98-46ab-b2ee-1f483f25e983"}
+  wall_clock=2s  tokens=unavailable(jq missing)
+BASELINE  service=ui_dashboard  run=1  phase=6_measure_final
+  [baseline_final] files=0  size=4.0K  loc=0  test_files=0  test_cases=0
+
+────────────────────────────────────────────────────────────────
+GENOTYPE  service=ui_dashboard  run=1  phase=2_build
+dir=./genotype_ui_dashboard_1  started=2026-03-27T23:57:22-04:00
+{"type":"result","subtype":"success","is_error":true,"duration_ms":277,"duration_api_ms":0,"num_turns":1,"result":"You've hit your limit · resets 3am (America/New_York)","stop_reason":"stop_sequence","session_id":"7eecaffd-ca1f-494a-8b44-9221994af6b1","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":{},"permission_denials":[],"fast_mode_state":"off","uuid":"ee8a1ac1-e4e6-4ead-930e-de7c82a9e058"}
+  wall_clock=1s  tokens=unavailable(jq missing)
+GENOTYPE  service=ui_dashboard  run=1  phase=3_measure_initial
+  [genotype_initial] files=0  size=4.0K  loc=0  test_files=0  test_cases=0
+GENOTYPE  service=ui_dashboard  run=1  phase=5_expand
+  started=2026-03-27T23:57:23-04:00
+{"type":"result","subtype":"success","is_error":true,"duration_ms":330,"duration_api_ms":0,"num_turns":1,"result":"You've hit your limit · resets 3am (America/New_York)","stop_reason":"stop_sequence","session_id":"566c6a5c-5a18-4ff1-9498-7938a90dd777","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":{},"permission_denials":[],"fast_mode_state":"off","uuid":"cd0ee62b-cc5c-49fc-8347-fcc28e201af5"}
+  wall_clock=2s  tokens=unavailable(jq missing)
+GENOTYPE  service=ui_dashboard  run=1  phase=6_measure_final
+  [genotype_final] files=0  size=4.0K  loc=0  test_files=0  test_cases=0
+DONE  service=ui_dashboard  run=1  finished=2026-03-27T23:57:25-04:00
+
+────────────────────────────────────────────────────────────────
+BASELINE  service=ui_dashboard  run=2  phase=1_build
+dir=./baseline_ui_dashboard_2  started=2026-03-27T23:57:25-04:00
+{"type":"result","subtype":"success","is_error":true,"duration_ms":265,"duration_api_ms":0,"num_turns":1,"result":"You've hit your limit · resets 3am (America/New_York)","stop_reason":"stop_sequence","session_id":"4796b3d4-0917-43b7-8093-e73c69eacede","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":{},"permission_denials":[],"fast_mode_state":"off","uuid":"c11a0905-ebcb-4e6c-b733-54a6e24a0034"}
+  wall_clock=1s  tokens=unavailable(jq missing)
+BASELINE  service=ui_dashboard  run=2  phase=3_measure_initial
+  [baseline_initial] files=0  size=4.0K  loc=0  test_files=0  test_cases=0
+BASELINE  service=ui_dashboard  run=2  phase=4_expand
+  started=2026-03-27T23:57:26-04:00
+{"type":"result","subtype":"success","is_error":true,"duration_ms":290,"duration_api_ms":0,"num_turns":1,"result":"You've hit your limit · resets 3am (America/New_York)","stop_reason":"stop_sequence","session_id":"da53f53d-ef3c-41c5-b8f3-fbad4918a455","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":{},"permission_denials":[],"fast_mode_state":"off","uuid":"39fc1c33-0a6a-411f-a383-a60dff79ab74"}
+  wall_clock=1s  tokens=unavailable(jq missing)
+BASELINE  service=ui_dashboard  run=2  phase=6_measure_final
+  [baseline_final] files=0  size=4.0K  loc=0  test_files=0  test_cases=0
+
+────────────────────────────────────────────────────────────────
+GENOTYPE  service=ui_dashboard  run=2  phase=2_build
+dir=./genotype_ui_dashboard_2  started=2026-03-27T23:57:27-04:00
+{"type":"result","subtype":"success","is_error":true,"duration_ms":283,"duration_api_ms":0,"num_turns":1,"result":"You've hit your limit · resets 3am (America/New_York)","stop_reason":"stop_sequence","session_id":"879d85f5-bf87-43d3-9c04-c1a438936a60","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":{},"permission_denials":[],"fast_mode_state":"off","uuid":"e1c57c7d-ff67-4e44-b249-280c7a4187bc"}
+  wall_clock=2s  tokens=unavailable(jq missing)
+GENOTYPE  service=ui_dashboard  run=2  phase=3_measure_initial
+  [genotype_initial] files=0  size=4.0K  loc=0  test_files=0  test_cases=0
+GENOTYPE  service=ui_dashboard  run=2  phase=5_expand
+  started=2026-03-27T23:57:29-04:00
+{"type":"result","subtype":"success","is_error":true,"duration_ms":268,"duration_api_ms":0,"num_turns":1,"result":"You've hit your limit · resets 3am (America/New_York)","stop_reason":"stop_sequence","session_id":"5a012fe7-8d77-4d37-8a63-d045b7ac9afa","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":{},"permission_denials":[],"fast_mode_state":"off","uuid":"02b5db41-6511-486e-ae41-18ef5089b537"}
+  wall_clock=1s  tokens=unavailable(jq missing)
+GENOTYPE  service=ui_dashboard  run=2  phase=6_measure_final
+  [genotype_final] files=0  size=4.0K  loc=0  test_files=0  test_cases=0
+DONE  service=ui_dashboard  run=2  finished=2026-03-27T23:57:30-04:00
+
+────────────────────────────────────────────────────────────────
+BASELINE  service=ui_dashboard  run=3  phase=1_build
+dir=./baseline_ui_dashboard_3  started=2026-03-27T23:57:30-04:00
+{"type":"result","subtype":"success","is_error":true,"duration_ms":280,"duration_api_ms":0,"num_turns":1,"result":"You've hit your limit · resets 3am (America/New_York)","stop_reason":"stop_sequence","session_id":"f15fa0f2-62ae-4b33-84ef-a3ffebb66a52","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":{},"permission_denials":[],"fast_mode_state":"off","uuid":"f9ff414f-9903-4b15-b4d7-05d01a2247b6"}
+  wall_clock=2s  tokens=unavailable(jq missing)
+BASELINE  service=ui_dashboard  run=3  phase=3_measure_initial
+  [baseline_initial] files=0  size=4.0K  loc=0  test_files=0  test_cases=0
+BASELINE  service=ui_dashboard  run=3  phase=4_expand
+  started=2026-03-27T23:57:32-04:00
+{"type":"result","subtype":"success","is_error":true,"duration_ms":301,"duration_api_ms":0,"num_turns":1,"result":"You've hit your limit · resets 3am (America/New_York)","stop_reason":"stop_sequence","session_id":"783093a1-ac45-41a8-8f4d-52491a789ac1","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":{},"permission_denials":[],"fast_mode_state":"off","uuid":"af52f76b-4f1e-4923-a2f1-f8b3dc0a5fe6"}
+  wall_clock=1s  tokens=unavailable(jq missing)
+BASELINE  service=ui_dashboard  run=3  phase=6_measure_final
+  [baseline_final] files=0  size=4.0K  loc=0  test_files=0  test_cases=0
+
+────────────────────────────────────────────────────────────────
+GENOTYPE  service=ui_dashboard  run=3  phase=2_build
+dir=./genotype_ui_dashboard_3  started=2026-03-27T23:57:33-04:00
+{"type":"result","subtype":"success","is_error":true,"duration_ms":371,"duration_api_ms":0,"num_turns":1,"result":"You've hit your limit · resets 3am (America/New_York)","stop_reason":"stop_sequence","session_id":"c89fdcb3-52bc-4fd0-a7fa-c2ce1b56301a","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":{},"permission_denials":[],"fast_mode_state":"off","uuid":"15c28793-0b7a-453e-9459-b280ec548c2d"}
+  wall_clock=2s  tokens=unavailable(jq missing)
+GENOTYPE  service=ui_dashboard  run=3  phase=3_measure_initial
+  [genotype_initial] files=0  size=4.0K  loc=0  test_files=0  test_cases=0
+GENOTYPE  service=ui_dashboard  run=3  phase=5_expand
+  started=2026-03-27T23:57:35-04:00
+{"type":"result","subtype":"success","is_error":true,"duration_ms":290,"duration_api_ms":0,"num_turns":1,"result":"You've hit your limit · resets 3am (America/New_York)","stop_reason":"stop_sequence","session_id":"0067d607-3cb6-4216-8b3d-11e6574a4682","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":{},"permission_denials":[],"fast_mode_state":"off","uuid":"1d16566a-5dfb-41d7-8854-895cb5a4d5d0"}
+  wall_clock=1s  tokens=unavailable(jq missing)
+GENOTYPE  service=ui_dashboard  run=3  phase=6_measure_final
+  [genotype_final] files=0  size=4.0K  loc=0  test_files=0  test_cases=0
+DONE  service=ui_dashboard  run=3  finished=2026-03-27T23:57:36-04:00
+
+======================================================================
+Genotype Benchmark  finished: 2026-03-27T23:57:36-04:00
+Results: results_20260327_230117.log
+======================================================================

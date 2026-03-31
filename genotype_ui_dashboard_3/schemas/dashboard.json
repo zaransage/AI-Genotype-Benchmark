@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "dashboard",
+  "title": "Dashboard API wire formats",
+  "definitions": {
+    "MetricValue": {
+      "type": "object",
+      "required": ["timestamp", "value"],
+      "properties": {
+        "timestamp": {"type": "string", "format": "date-time"},
+        "value":     {"type": "number"}
+      },
+      "additionalProperties": false
+    },
+    "Widget": {
+      "type": "object",
+      "required": ["id", "name", "unit", "dashboard_id", "values"],
+      "properties": {
+        "id":           {"type": "string"},
+        "name":         {"type": "string", "minLength": 1},
+        "unit":         {"type": "string", "minLength": 1},
+        "dashboard_id": {"type": "string"},
+        "values":       {"type": "array", "items": {"$ref": "#/definitions/MetricValue"}}
+      },
+      "additionalProperties": false
+    },
+    "Dashboard": {
+      "type": "object",
+      "required": ["id", "name", "created_at", "widgets"],
+      "properties": {
+        "id":         {"type": "string"},
+        "name":       {"type": "string", "minLength": 1},
+        "created_at": {"type": "string", "format": "date-time"},
+        "widgets":    {"type": "array", "items": {"$ref": "#/definitions/Widget"}}
+      },
+      "additionalProperties": false
+    },
+    "CreateDashboardRequest": {
+      "type": "object",
+      "required": ["name"],
+      "properties": {
+        "name": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": false
+    },
+    "AddWidgetRequest": {
+      "type": "object",
+      "required": ["name", "unit"],
+      "properties": {
+        "name": {"type": "string", "minLength": 1},
+        "unit": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": false
+    },
+    "PostMetricRequest": {
+      "type": "object",
+      "required": ["value", "timestamp"],
+      "properties": {
+        "value":     {"type": "number"},
+        "timestamp": {"type": "string", "format": "date-time"}
+      },
+      "additionalProperties": false
+    }
+  }
+}

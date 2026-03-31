@@ -1,0 +1,7 @@
+{
+  "id": "widget-001",
+  "dashboard_id": "dash-001",
+  "name": "CPU Usage",
+  "metric_name": "cpu_percent",
+  "values": []
+}

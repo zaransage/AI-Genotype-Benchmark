@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, sans-serif;
+      background: #f0f2f5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      gap: 1.5rem;
+    }
+
+    h1 { font-size: 2rem; color: #1a1a2e; letter-spacing: 0.04em; }
+
+    #status {
+      font-size: 1.1rem;
+      color: #444;
+      min-height: 1.6em;
+      text-align: center;
+    }
+
+    #board {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-template-rows:    repeat(3, 100px);
+      gap: 6px;
+    }
+
+    .cell {
+      background: #ffffff;
+      border: 2px solid #c0c0d0;
+      border-radius: 8px;
+      font-size: 2.6rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.15s;
+      color: #1a1a2e;
+    }
+
+    .cell:hover:not(.taken) { background: #e8eaf6; }
+    .cell.taken { cursor: default; }
+    .cell.x { color: #e53935; }
+    .cell.o { color: #1e88e5; }
+
+    #new-game {
+      padding: 0.65rem 2rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 6px;
+      background: #3949ab;
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    #new-game:hover { background: #283593; }
+    #new-game:disabled { background: #9fa8da; cursor: default; }
+  </style>
+</head>
+<body>
+  <h1>Tic-Tac-Toe</h1>
+  <div id="status">Press "New Game" to start.</div>
+
+  <div id="board">
+    <!-- 9 cells injected by JS -->
+  </div>
+
+  <button id="new-game">New Game</button>
+
+  <script>
+    // -----------------------------------------------------------------------
+    // State
+    // -----------------------------------------------------------------------
+    let gameId       = null;
+    let currentPlayer = null;
+    let gameOver     = false;
+
+    const statusEl  = document.getElementById("status");
+    const boardEl   = document.getElementById("board");
+    const newGameBtn = document.getElementById("new-game");
+
+    // -----------------------------------------------------------------------
+    // API helpers
+    // -----------------------------------------------------------------------
+    async function apiPost(path, body) {
+      const res = await fetch(path, {
+        method:  "POST",
+        headers: { "Content-Type": "application/json" },
+        body:    body !== undefined ? JSON.stringify(body) : undefined,
+      });
+      if (!res.ok) {
+        const err = await res.json().catch(() => ({}));
+        throw new Error(err.detail || `HTTP ${res.status}`);
+      }
+      return res.json();
+    }
+
+    async function apiGet(path) {
+      const res = await fetch(path);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      return res.json();
+    }
+
+    // -----------------------------------------------------------------------
+    // Rendering
+    // -----------------------------------------------------------------------
+    function renderBoard(board) {
+      boardEl.innerHTML = "";
+      board.forEach((row, r) => {
+        row.forEach((cell, c) => {
+          const el = document.createElement("div");
+          el.className = "cell";
+          if (cell) {
+            el.textContent = cell;
+            el.classList.add("taken", cell.toLowerCase());
+          } else {
+            el.addEventListener("click", () => onCellClick(r, c));
+          }
+          boardEl.appendChild(el);
+        });
+      });
+    }
+
+    function renderState(state) {
+      renderBoard(state.board);
+      currentPlayer = state.current_player;
+      gameOver      = state.status !== "in_progress";
+
+      if (state.status === "x_wins")     statusEl.textContent = "X wins! 🎉";
+      else if (state.status === "o_wins") statusEl.textContent = "O wins! 🎉";
+      else if (state.status === "draw")   statusEl.textContent = "It's a draw!";
+      else                                statusEl.textContent = `Player ${state.current_player}'s turn`;
+
+      newGameBtn.disabled = false;
+    }
+
+    // -----------------------------------------------------------------------
+    // Event handlers
+    // -----------------------------------------------------------------------
+    async function onCellClick(row, col) {
+      if (gameOver || !gameId) return;
+      try {
+        statusEl.textContent = "…";
+        const state = await apiPost(`/games/${gameId}/moves`, {
+          player: currentPlayer,
+          row,
+          col,
+        });
+        renderState(state);
+      } catch (e) {
+        statusEl.textContent = `Error: ${e.message}`;
+      }
+    }
+
+    newGameBtn.addEventListener("click", async () => {
+      newGameBtn.disabled = true;
+      statusEl.textContent = "Starting…";
+      try {
+        const state = await apiPost("/games");
+        gameId = state.game_id;
+        renderState(state);
+      } catch (e) {
+        statusEl.textContent = `Error: ${e.message}`;
+        newGameBtn.disabled = false;
+      }
+    });
+  </script>
+</body>
+</html>

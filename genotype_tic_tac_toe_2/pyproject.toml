@@ -1,0 +1,31 @@
+[project]
+name = "genotype-tic-tac-toe-2"
+version = "0.1.0"
+description = "Two-player tic-tac-toe REST API — Agentic-Code-Genotype lineage"
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.30.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "httpx>=0.27.0",
+]
+
+[tool.black]
+line-length = 100
+# Exclude aligned-column data model and adaptor mapping files from auto-formatting
+exclude = '''
+/(
+    domain/game/game\.py
+  | domain/game/completed_game\.py
+  | domain/game/adaptors/rest_controller\.py
+  | domain/game/adaptors/web_ui_controller\.py
+  | domain/game/ports/sqlite_game_archive\.py
+)/
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 100

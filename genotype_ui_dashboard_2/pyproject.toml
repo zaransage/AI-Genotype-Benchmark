@@ -1,0 +1,17 @@
+[project]
+name            = "genotype-ui-dashboard-2"
+version         = "1.0.0"
+description     = "Metrics Dashboard REST API — hexagonal architecture genotype"
+requires-python = ">=3.14"
+
+[tool.black]
+# Aligned column formatting in data models and adaptor mapping files is intentional.
+# Exclude these files so black does not collapse deliberate alignment (ADR-0006).
+exclude = '''
+/(
+    domain/dashboard/core/models\.py
+  | domain/dashboard/core/commands\.py
+  | domain/dashboard/core/adaptors/rest_routes\.py
+  | domain/dashboard/core/ports/sqlite_dashboard_repo\.py
+)/
+'''

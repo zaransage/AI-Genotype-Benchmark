@@ -1,0 +1,11 @@
+{
+    "game_id": "archive-test-game-001",
+    "moves": [
+        {"player": "X", "row": 0, "col": 0},
+        {"player": "O", "row": 1, "col": 1},
+        {"player": "X", "row": 0, "col": 1},
+        {"player": "O", "row": 2, "col": 2},
+        {"player": "X", "row": 0, "col": 2}
+    ],
+    "outcome": "x_wins"
+}

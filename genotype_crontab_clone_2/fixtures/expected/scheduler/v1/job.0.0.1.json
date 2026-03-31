@@ -1,0 +1,6 @@
+{
+  "name": "daily-backup",
+  "command": "tar -czf /tmp/backup.tgz /data",
+  "cron_expression": "0 2 * * *",
+  "enabled": true
+}

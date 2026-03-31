@@ -1,0 +1,18 @@
+[project]
+name = "genotype-ui-dashboard-3"
+version = "0.1.0"
+requires-python = ">=3.12"
+description = "Metrics Dashboard REST API — hexagonal architecture"
+
+[tool.black]
+# Aligned column formatting in models.py and adaptors is intentional — exclude from formatter.
+exclude = '''
+/(
+    domain/dashboard/core/models\.py
+  | domain/dashboard/core/adaptors/dashboard_controller\.py
+  | domain/dashboard/core/adaptors/ui_router\.py
+)/
+'''
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

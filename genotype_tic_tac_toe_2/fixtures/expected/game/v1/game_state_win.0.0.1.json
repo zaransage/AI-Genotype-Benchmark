@@ -1,0 +1,7 @@
+{
+  "game_id": "550e8400-e29b-41d4-a716-446655440000",
+  "board": ["X", "X", "X", "O", "O", "", "", "", ""],
+  "current_player": "X",
+  "status": "x_wins",
+  "winner": "X"
+}
