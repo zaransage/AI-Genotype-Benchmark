@@ -212,33 +212,37 @@ All 18 runs were executed with `pytest --cov` (venvs created fresh via `uv`, `.v
 
 ---
 
-## 8 · Final Repository Sizes (on disk, `.venv` excluded)
+## 8 · Final Repository Sizes
 
-Measured from each output directory after all phases completed.
+Two measurements are shown:
+- **On-disk** — `du` after all phases, `.venv` excluded but `__pycache__`/`.pyc` included (as logged by bootstrap)
+- **Clone size** — `.venv` + `__pycache__` + `*.pyc` all excluded; represents what a fresh `git clone` would contain
 
-| Service | Run | Baseline | Genotype |
-|---|---|---:|---:|
-| tic_tac_toe | 1 | 124K | 372K |
-| tic_tac_toe | 2 | 152K | 536K |
-| tic_tac_toe | 3 | 120K | 408K |
-| **tic_tac_toe avg** | | **132K** | **439K** |
-| crontab_clone | 1 | 172K | 424K |
-| crontab_clone | 2 | 172K | 336K |
-| crontab_clone | 3 | 180K | 428K |
-| **crontab_clone avg** | | **175K** | **396K** |
-| ui_dashboard | 1 | 208K | 480K |
-| ui_dashboard | 2 | 188K | 404K |
-| ui_dashboard | 3 | 192K | 348K |
-| **ui_dashboard avg** | | **196K** | **411K** |
+| Service | Run | Baseline on-disk | Baseline clone | Genotype on-disk | Genotype clone |
+|---|---|---:|---:|---:|---:|
+| tic_tac_toe | 1 | 124K | 136K | 372K | 320K |
+| tic_tac_toe | 2 | 152K | 152K | 536K | 360K |
+| tic_tac_toe | 3 | 120K | 140K | 408K | 328K |
+| **tic_tac_toe avg** | | **132K** | **143K** | **439K** | **336K** |
+| crontab_clone | 1 | 172K | 168K | 424K | 300K |
+| crontab_clone | 2 | 172K | 160K | 336K | 260K |
+| crontab_clone | 3 | 180K | 160K | 428K | 336K |
+| **crontab_clone avg** | | **175K** | **163K** | **396K** | **299K** |
+| ui_dashboard | 1 | 208K | 176K | 480K | 364K |
+| ui_dashboard | 2 | 188K | 184K | 404K | 296K |
+| ui_dashboard | 3 | 192K | 184K | 348K | 280K |
+| **ui_dashboard avg** | | **196K** | **181K** | **411K** | **313K** |
 
 ### Size Multiplier (genotype / baseline)
 
-| Service | Baseline Avg | Genotype Avg | Multiplier |
-|---|---:|---:|---:|
-| tic_tac_toe | 132K | 439K | 3.3× |
-| crontab_clone | 175K | 396K | 2.3× |
-| ui_dashboard | 196K | 411K | 2.1× |
-| **Overall** | **168K** | **415K** | **2.5×** |
+| Service | On-disk Multiplier | Clone Multiplier |
+|---|---:|---:|
+| tic_tac_toe | 3.3× | 2.4× |
+| crontab_clone | 2.3× | 1.8× |
+| ui_dashboard | 2.1× | 1.7× |
+| **Overall** | **2.5×** | **2.0×** |
+
+The `__pycache__` directories (generated when tests ran) accounted for most of the difference between the two measurements in genotype runs. The true committed codebase is approximately **2× larger** for genotype than baseline.
 
 ---
 
